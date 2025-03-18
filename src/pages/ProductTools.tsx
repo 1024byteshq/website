@@ -3,55 +3,49 @@ import React from "react";
 const ProductTools: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-8">Product and Tools</h1>
-      <div className="prose max-w-none">
-        <p className="text-lg mb-6">
+      <h1 className="text-4xl font-bold mb-8 mt-16 text-primary">
+        Product and Tools
+      </h1>
+      <div className="max-w-none">
+        <p className="text-base sm:text-lg mb-6 text-primary">
           Discover our suite of innovative products and tools designed to help
-          businesses and developers build the future of technology.
+          businesses thrive in the digital age.
         </p>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">Our Products</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div className="p-6 bg-secondary-light rounded-lg">
-            <h3 className="text-xl font-bold mb-4">Cloud Platform</h3>
-            <p className="text-lg mb-4">
-              A comprehensive cloud platform for building and deploying scalable
-              applications.
-            </p>
-            <ul className="list-disc pl-6 mb-4">
-              <li>Automated deployment</li>
-              <li>Scalable infrastructure</li>
-              <li>Advanced monitoring</li>
-              <li>Security features</li>
-            </ul>
-          </div>
-
-          <div className="p-6 bg-secondary-light rounded-lg">
-            <h3 className="text-xl font-bold mb-4">Development Tools</h3>
-            <p className="text-lg mb-4">
-              Essential tools for modern software development and engineering.
-            </p>
-            <ul className="list-disc pl-6 mb-4">
-              <li>Code analysis</li>
-              <li>Testing frameworks</li>
-              <li>CI/CD pipelines</li>
-              <li>Documentation tools</li>
-            </ul>
-          </div>
-        </div>
-
-        <h2 className="text-2xl font-bold mt-8 mb-4">Open Source Tools</h2>
-        <p className="text-lg mb-6">
-          We contribute to and maintain several open-source tools that help
-          developers build better software. Our tools are designed to be
-          efficient, reliable, and easy to use.
+        <h2 className="text-2xl font-bold mt-8 mb-4 text-primary">
+          AI-Powered Analytics Platform
+        </h2>
+        <p className="text-base sm:text-lg mb-6 text-primary">
+          Our advanced analytics platform leverages machine learning to provide
+          data-driven insights and decision-making capabilities. Transform your
+          business with predictive analytics and real-time monitoring.
         </p>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">Getting Started</h2>
-        <p className="text-lg mb-6">
-          Ready to explore our products and tools? Visit our documentation or
-          contact us to learn more about how we can help you achieve your
-          technology goals.
+        <h2 className="text-2xl font-bold mt-8 mb-4 text-primary">
+          Blockchain Security Suite
+        </h2>
+        <p className="text-base sm:text-lg mb-6 text-primary">
+          Comprehensive security tools for blockchain networks and smart
+          contracts. Protect your digital assets with our state-of-the-art
+          security solutions.
+        </p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4 text-primary">
+          Cloud Infrastructure Tools
+        </h2>
+        <p className="text-base sm:text-lg mb-6 text-primary">
+          Streamline your cloud operations with our suite of infrastructure
+          management tools. Optimize resource allocation and enhance system
+          performance.
+        </p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4 text-primary">
+          Cybersecurity Solutions
+        </h2>
+        <p className="text-base sm:text-lg mb-6 text-primary">
+          Protect your digital assets with our comprehensive cybersecurity
+          solutions. From threat detection to incident response, we've got you
+          covered.
         </p>
       </div>
     </div>
