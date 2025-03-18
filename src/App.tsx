@@ -3,7 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Services from "./pages/Services";
+import RD from "./pages/RD";
+import ProductTools from "./pages/ProductTools";
 import Contact from "./pages/Contact";
 
 const App: React.FC = () => {
@@ -12,7 +13,8 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/rd" element={<RD />} />
+        <Route path="/product-tools" element={<ProductTools />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Layout>

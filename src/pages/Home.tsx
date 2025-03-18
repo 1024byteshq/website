@@ -32,7 +32,7 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-secondary min-h-screen flex flex-col items-center justify-center px-4 relative overflow-x-hidden">
+    <div className="bg-secondary h-screen flex flex-col items-center justify-center px-4 relative overflow-hidden">
       <NetworkBackground />
 
       {/* Mobile Navigation */}
@@ -40,35 +40,41 @@ const Home: React.FC = () => {
         <Link to="/" className="nav-link text-2xl">
           Home
         </Link>
+        <Link to="/rd" className="nav-link text-2xl">
+          R&D
+        </Link>
         <Link to="/about" className="nav-link text-2xl">
           About
+        </Link>
+        <Link to="/product-tools" className="nav-link text-2xl">
+          Product & Tools
         </Link>
         <Link to="/contact" className="nav-link text-2xl">
           Contact
         </Link>
-        <Link to="/services" className="nav-link text-2xl">
-          Services
-        </Link>
       </nav>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex items-center space-x-8 mb-8 z-10">
+      <nav className="hidden md:flex items-center space-x-12 mb-8 z-10">
         <Link to="/" className="nav-link text-xl">
           Home
+        </Link>
+        <Link to="/rd" className="nav-link text-xl">
+          R&D
         </Link>
         <Link to="/about" className="nav-link text-xl">
           About
         </Link>
+        <Link to="/product-tools" className="nav-link text-xl">
+          Product & Tools
+        </Link>
         <Link to="/contact" className="nav-link text-xl">
           Contact
-        </Link>
-        <Link to="/services" className="nav-link text-xl">
-          Services
         </Link>
       </nav>
 
       {/* Mobile Rotated Text */}
-      <div className="md:hidden absolute right-8 top-1/2 -translate-y-1/2 pr-4 z-10">
+      <div className="md:hidden absolute right-8 top-1/2 -translate-y-1/2 z-10">
         <h1
           className={`font-orbitron text-5xl sm:text-6xl font-bold text-primary tracking-wider whitespace-nowrap origin-right rotate-90 ${isGlitching ? "glitch-text" : ""}`}
           data-text={`${displayText} Bytes`}

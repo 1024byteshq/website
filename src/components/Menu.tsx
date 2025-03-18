@@ -7,9 +7,9 @@ const Menu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Projects", path: "/projects" },
+    { name: "R&D", path: "/rd" },
+    { name: "Product and Tools", path: "/product-tools" },
     { name: "Contact", path: "/contact" },
   ];
 

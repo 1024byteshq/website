@@ -30,14 +30,14 @@ const Layout = ({ children }: LayoutProps) => {
 
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center space-x-8">
-                <Link to="/" className="nav-link">
-                  Home
-                </Link>
                 <Link to="/about" className="nav-link">
                   About
                 </Link>
-                <Link to="/services" className="nav-link">
-                  Services
+                <Link to="/rd" className="nav-link">
+                  R&D
+                </Link>
+                <Link to="/product-tools" className="nav-link">
+                  Product and Tools
                 </Link>
                 <Link to="/contact" className="nav-link">
                   Contact
@@ -71,14 +71,14 @@ const Layout = ({ children }: LayoutProps) => {
               } overflow-hidden`}
             >
               <div className="py-4 space-y-4">
-                <Link to="/" className="block nav-link">
-                  Home
-                </Link>
                 <Link to="/about" className="block nav-link">
                   About
                 </Link>
-                <Link to="/services" className="block nav-link">
-                  Services
+                <Link to="/rd" className="block nav-link">
+                  R&D
+                </Link>
+                <Link to="/product-tools" className="block nav-link">
+                  Product and Tools
                 </Link>
                 <Link to="/contact" className="block nav-link">
                   Contact
