@@ -2,6 +2,7 @@
   "name": "1024-website",
   "version": "1.0.0",
   "description": "Official website for 1024 Research and Engineering",
+  "homepage": "https://1024bytes.io",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -36,6 +37,7 @@
     "postcss": "^8.4.35",
     "prettier": "^3.2.5",
     "tailwindcss": "^3.4.1",
+    "terser": "^5.27.2",
     "typescript": "^5.3.3",
     "vite": "^5.1.3"
   }
