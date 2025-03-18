@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>1024 Bytes</title>
+    <script>
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      var pathSegmentsToKeep = 0;
+      var l = window.location;
+      var r = l.pathname.split("/").slice(1);
+      var s = r.slice(pathSegmentsToKeep).join("/");
+      var m = l.pathname
+        .slice(0, 1)
+        .concat(r.slice(0, pathSegmentsToKeep).join("/"));
+      var f = l.search;
+      var d = l.hash;
+      var u = m + "/" + s + f + d;
+      window.location.replace(u);
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <h1>Redirecting...</h1>
+    </noscript>
+  </body>
+</html>

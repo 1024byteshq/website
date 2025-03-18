@@ -2,7 +2,7 @@
   "name": "1024-website",
   "version": "1.0.0",
   "description": "Official website for 1024 Research and Engineering",
-  "homepage": "https://1024bytes.io",
+  "homepage": "https://1024byteshq.github.io/website/",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
