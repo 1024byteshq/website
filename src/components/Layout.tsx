@@ -33,11 +33,14 @@ const Layout = ({ children }: LayoutProps) => {
                 <Link to="/about" className="nav-link">
                   About
                 </Link>
-                <Link to="/rd" className="nav-link">
+                {/* <Link to="/rd" className="nav-link">
                   R&D
-                </Link>
+                </Link> */}
                 <Link to="/product-tools" className="nav-link">
                   Product and Tools
+                </Link>
+                <Link to="/community" className="nav-link">
+                  Community
                 </Link>
                 <Link to="/contact" className="nav-link">
                   Contact
@@ -79,6 +82,9 @@ const Layout = ({ children }: LayoutProps) => {
                 </Link>
                 <Link to="/product-tools" className="block nav-link">
                   Product and Tools
+                </Link>
+                <Link to="/community" className="block nav-link">
+                  Community
                 </Link>
                 <Link to="/contact" className="block nav-link">
                   Contact

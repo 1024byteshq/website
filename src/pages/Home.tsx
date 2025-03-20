@@ -40,14 +40,17 @@ const Home: React.FC = () => {
         <Link to="/" className="nav-link text-2xl">
           Home
         </Link>
-        <Link to="/rd" className="nav-link text-2xl">
+        {/* <Link to="/rd" className="nav-link text-2xl">
           R&D
-        </Link>
+        </Link> */}
         <Link to="/about" className="nav-link text-2xl">
           About
         </Link>
         <Link to="/product-tools" className="nav-link text-2xl">
           Product & Tools
+        </Link>
+        <Link to="/community" className="nav-link text-2xl">
+          Community
         </Link>
         <Link to="/contact" className="nav-link text-2xl">
           Contact
@@ -59,14 +62,17 @@ const Home: React.FC = () => {
         <Link to="/" className="nav-link text-xl">
           Home
         </Link>
-        <Link to="/rd" className="nav-link text-xl">
+        {/* <Link to="/rd" className="nav-link text-xl">
           R&D
-        </Link>
+        </Link> */}
         <Link to="/about" className="nav-link text-xl">
           About
         </Link>
         <Link to="/product-tools" className="nav-link text-xl">
           Product & Tools
+        </Link>
+        <Link to="/community" className="nav-link text-xl">
+          Community
         </Link>
         <Link to="/contact" className="nav-link text-xl">
           Contact
