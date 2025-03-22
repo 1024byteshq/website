@@ -13,9 +13,9 @@ const Community: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl"></div>
           <div className="relative p-8 rounded-2xl border border-primary/10">
             <p className="text-xl text-gray-300 text-center">
-              Welcome to Bytes Circle, a community where technology enthusiasts
-              come together to share knowledge, discuss technical topics, and
-              build meaningful connections.
+              Welcome to Bytes Circle, a community focused on inspiring social
+              connections and relevant networking around a shared interest in
+              technology, software and deeply technical concepts.
             </p>
           </div>
         </div>
