@@ -77,9 +77,9 @@ const Layout = ({ children }: LayoutProps) => {
                 <Link to="/about" className="block nav-link">
                   About
                 </Link>
-                <Link to="/rd" className="block nav-link">
+                {/* <Link to="/rd" className="block nav-link">
                   R&D
-                </Link>
+                </Link> */}
                 <Link to="/product-tools" className="block nav-link">
                   Product and Tools
                 </Link>
