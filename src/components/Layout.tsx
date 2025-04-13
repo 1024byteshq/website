@@ -1,6 +1,7 @@
 import { useState, useEffect, ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import backgroundImage from "../assets/images/steve-johnson-unsplash.jpg";
+import Footer from "./Footer";
 
 interface LayoutProps {
   children: ReactNode;
@@ -29,7 +30,7 @@ const Layout = ({ children }: LayoutProps) => {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-[40px] z-0"></div>
+      <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px] z-0"></div>
 
       {!isHomePage && (
         <header className="fixed w-full bg-black/30 backdrop-blur-sm z-50 border-b border-white/10">
@@ -121,16 +122,9 @@ const Layout = ({ children }: LayoutProps) => {
         </header>
       )}
 
-      <main className="flex-grow relative z-10">
-        {children}
-        {!isHomePage && (
-          <div className="w-full text-center py-8">
-            <h1 className="font-orbitron text-6xl font-bold text-white tracking-wider">
-              1024 Bytes
-            </h1>
-          </div>
-        )}
-      </main>
+      <main className="flex-grow relative z-10">{children}</main>
+
+      <Footer />
     </div>
   );
 };

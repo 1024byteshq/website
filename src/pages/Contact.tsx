@@ -19,19 +19,6 @@ const Contact: React.FC = () => {
             hello@1024bytes.io
           </a>
         </p>
-        <div className="mt-6 sm:mt-8">
-          <p className="text-sm sm:text-base lg:text-lg mb-4 text-white/90 leading-relaxed">
-            You can also find us on{" "}
-            <a
-              href="https://x.com/1024bytesHQ"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-white/80 transition-colors underline"
-            >
-              X (Twitter)
-            </a>
-          </p>
-        </div>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ const About: React.FC = () => {
         </p>
 
         <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
-          Our mission is to build what matters — using web and mobile
+          Our mission is to build what matters, using web and mobile
           technologies, AI, and blockchain to power real-world change.
         </p>
 
