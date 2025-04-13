@@ -30,7 +30,7 @@ const Layout = ({ children }: LayoutProps) => {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px] z-0"></div>
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-[30px] z-0"></div>
 
       {!isHomePage && (
         <header className="fixed w-full bg-black/30 backdrop-blur-sm z-50 border-b border-white/10">
