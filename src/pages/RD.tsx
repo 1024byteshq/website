@@ -2,7 +2,7 @@ import React from "react";
 
 const RD: React.FC = () => {
   return (
-    <div className="container mx-auto px-4 py-16">
+    <div className="container mt-20 mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold mb-8 mt-16 text-primary">
         Research & Development
       </h1>

@@ -8,15 +8,15 @@
   }
 
   .btn-primary {
-    @apply bg-primary text-white hover:bg-primary-dark focus:ring-primary;
+    @apply bg-white/20 text-white hover:bg-white/30 focus:ring-white/50;
   }
 
   .btn-secondary {
-    @apply border-2 border-primary text-primary hover:bg-primary/10 focus:ring-primary;
+    @apply border-2 border-white/30 text-white hover:bg-white/10 focus:ring-white/50;
   }
 
   .nav-link {
-    @apply text-primary-light hover:text-primary transition-colors duration-300;
+    @apply text-white/80 hover:text-white transition-colors duration-300;
   }
 
   /* Network Animation */
@@ -25,7 +25,7 @@
     background: linear-gradient(
       to bottom,
       transparent,
-      rgba(var(--primary-rgb), 0.12)
+      rgba(255, 255, 255, 0.12)
     );
   }
 
@@ -33,9 +33,9 @@
     @apply absolute w-64 h-64 -translate-x-1/2 -translate-y-1/2 pointer-events-none;
     background: radial-gradient(
       circle,
-      rgba(var(--primary-rgb), 0.2) 0%,
-      rgba(var(--primary-rgb), 0.15) 20%,
-      rgba(var(--primary-rgb), 0.1) 40%,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.15) 20%,
+      rgba(255, 255, 255, 0.1) 40%,
       transparent 70%
     );
     animation: ripple 2s ease-out infinite;
@@ -53,35 +53,35 @@
   }
 
   .network-line {
-    stroke: rgba(var(--primary-rgb), 0.3);
+    stroke: rgba(255, 255, 255, 0.3);
     stroke-width: 2;
     transition: all 0.2s ease;
   }
 
   .network-line-active {
-    stroke: rgba(var(--primary-rgb), 0.9);
+    stroke: rgba(255, 255, 255, 0.9);
     stroke-width: 2.5;
   }
 
   .network-node {
-    @apply absolute w-2 h-2 rounded-full bg-primary/40;
+    @apply absolute w-2 h-2 rounded-full bg-white/40;
     transform-origin: center;
     transition: all 0.2s ease;
   }
 
   .network-node-active {
-    @apply bg-primary/95;
+    @apply bg-white/95;
   }
 
   .network-node::before {
     content: "";
     @apply absolute inset-0 rounded-full;
-    box-shadow: 0 0 20px 2px rgba(var(--primary-rgb), 0.3);
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.3);
     transition: all 0.2s ease;
   }
 
   .network-node-active::before {
-    box-shadow: 0 0 40px 6px rgba(var(--primary-rgb), 0.9);
+    box-shadow: 0 0 40px 6px rgba(255, 255, 255, 0.9);
   }
 
   .network-node::after {
@@ -89,7 +89,7 @@
     @apply absolute top-1/2 left-1/2 w-32 h-32 -translate-x-1/2 -translate-y-1/2;
     background: radial-gradient(
       circle,
-      rgba(var(--primary-rgb), 0.15) 0%,
+      rgba(255, 255, 255, 0.15) 0%,
       transparent 70%
     );
     transition: all 0.2s ease;
@@ -98,7 +98,7 @@
   .network-node-active::after {
     background: radial-gradient(
       circle,
-      rgba(var(--primary-rgb), 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 0%,
       transparent 70%
     );
   }
@@ -228,7 +228,7 @@
   }
 
   .glitch-text::before {
-    @apply left-2 text-primary-light;
+    @apply left-2 text-white/80;
     animation: glitch 2s linear infinite;
     clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
     transform: translate(-0.025em, -0.0125em);
@@ -236,7 +236,7 @@
   }
 
   .glitch-text::after {
-    @apply -left-2 text-primary-dark;
+    @apply -left-2 text-white/60;
     animation: glitch 3s linear infinite;
     clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
     transform: translate(0.0125em, 0.025em);
@@ -248,7 +248,6 @@
     inset: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none;
   }
 
   .particle {

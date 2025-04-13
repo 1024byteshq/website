@@ -1,5 +1,6 @@
 import { useState, useEffect, ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
+import backgroundImage from "../assets/images/steve-johnson-unsplash.jpg";
 
 interface LayoutProps {
   children: ReactNode;
@@ -19,30 +20,52 @@ const Layout = ({ children }: LayoutProps) => {
   }, [location]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-secondary">
+    <div
+      className="min-h-screen flex flex-col relative"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      <div className="absolute inset-0 bg-black/30 backdrop-blur-[40px] z-0"></div>
+
       {!isHomePage && (
-        <header className="fixed w-full bg-secondary/95 backdrop-blur-sm z-50 border-b border-primary/10">
+        <header className="fixed w-full bg-black/30 backdrop-blur-sm z-50 border-b border-white/10">
           <nav className="container mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
-              <Link to="/" className="text-2xl font-bold">
+              <Link to="/" className="text-2xl font-bold text-white">
                 1024
               </Link>
 
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center space-x-8">
-                <Link to="/about" className="nav-link">
+                <Link
+                  to="/about"
+                  className="nav-link text-white hover:text-white/80"
+                >
                   About
                 </Link>
                 {/* <Link to="/rd" className="nav-link">
                   R&D
                 </Link> */}
-                <Link to="/product-tools" className="nav-link">
+                <Link
+                  to="/product-tools"
+                  className="nav-link text-white hover:text-white/80"
+                >
                   Product and Tools
                 </Link>
-                <Link to="/community" className="nav-link">
+                <Link
+                  to="/community"
+                  className="nav-link text-white hover:text-white/80"
+                >
                   Community
                 </Link>
-                <Link to="/contact" className="nav-link">
+                <Link
+                  to="/contact"
+                  className="nav-link text-white hover:text-white/80"
+                >
                   Contact
                 </Link>
               </div>
@@ -55,13 +78,13 @@ const Layout = ({ children }: LayoutProps) => {
               >
                 <div className="w-6 h-6 flex flex-col justify-around">
                   <span
-                    className={`block w-full h-0.5 bg-primary transform transition-all duration-300 ${isMenuOpen ? "rotate-45 translate-y-2.5" : ""}`}
+                    className={`block w-full h-0.5 bg-white transform transition-all duration-300 ${isMenuOpen ? "rotate-45 translate-y-2.5" : ""}`}
                   />
                   <span
-                    className={`block w-full h-0.5 bg-primary transition-all duration-300 ${isMenuOpen ? "opacity-0" : ""}`}
+                    className={`block w-full h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? "opacity-0" : ""}`}
                   />
                   <span
-                    className={`block w-full h-0.5 bg-primary transform transition-all duration-300 ${isMenuOpen ? "-rotate-45 -translate-y-2.5" : ""}`}
+                    className={`block w-full h-0.5 bg-white transform transition-all duration-300 ${isMenuOpen ? "-rotate-45 -translate-y-2.5" : ""}`}
                   />
                 </div>
               </button>
@@ -74,7 +97,10 @@ const Layout = ({ children }: LayoutProps) => {
               } overflow-hidden`}
             >
               <div className="py-4 space-y-4">
-                <Link to="/about" className="block nav-link">
+                <Link
+                  to="/about"
+                  className="block nav-link text-white hover:text-white/80"
+                >
                   About
                 </Link>
                 {/* <Link to="/rd" className="block nav-link">
@@ -95,11 +121,11 @@ const Layout = ({ children }: LayoutProps) => {
         </header>
       )}
 
-      <main className="flex-grow">
+      <main className="flex-grow relative z-10">
         {children}
         {!isHomePage && (
           <div className="w-full text-center py-8">
-            <h1 className="font-orbitron text-6xl font-bold text-primary tracking-wider">
+            <h1 className="font-orbitron text-6xl font-bold text-white tracking-wider">
               1024 Bytes
             </h1>
           </div>
