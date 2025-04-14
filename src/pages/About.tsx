@@ -8,31 +8,28 @@ const About: React.FC = () => {
       </h1>
 
       <div className="max-w-3xl mx-auto">
-        <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
-          We are an engineering and research lab on a mission to build
-          technology that truly matters. At 1024 Bytes, we sit at the
-          intersection of innovation and impact, crafting software solutions
-          with a deep sense of purpose, laying computer bytes like bricks to
-          build alternate inclusive futures.
+        <p className="text-base sm:text-md lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
+          We’re a small but ambitious engineering and research lab, building
+          technology that actually matters. At 1024 Bytes, we don’t just ship
+          features, we design systems with real depth, aiming to create tools
+          and platforms that stand the test of time.
         </p>
 
-        <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
-          As AI and blockchain continue to integrate into everyday life, most
-          organizations focus on boosting developer productivity. That's
-          valuable but, it's just the beginning. There are vast, untapped
-          opportunities in agriculture, commerce, healthcare, and governance
-          where these technologies can reshape how we live and work.
+        <p className="text-base sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
+          As technology becomes more woven into everyday life, we believe the
+          real breakthroughs won’t come from hype cycles, but from quietly
+          solving the hard, overlooked problems that shape how the world works,
+          from commerce to public services, science to society. Our mission is
+          simple: use software, AI, and blockchain to power meaningful change.
+          No buzzwords, just focused, systems-driven engineering with impact at
+          the core.
         </p>
 
-        <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
-          Our mission is to build what matters, using web and mobile
-          technologies, AI, and blockchain to power real-world change.
-        </p>
-
-        <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
-          We aim to architect software that solves meaningful problems while
-          staying lean, talent-driven, and obsessed with fast, high-quality
-          delivery.
+        <p className="text-base sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
+          We keep things lean, driven by talent and curiosity, not red tape. And
+          we move fast building with purpose, and just the right amount of
+          rebellion. One byte at a time, we’re shaping the future we actually
+          want to live in.
         </p>
       </div>
     </div>

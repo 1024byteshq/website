@@ -7,7 +7,7 @@ const ProductTools: React.FC = () => {
         Products & Tools
       </h1>
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mt-8 sm:mt-10 mb-3 sm:mb-4 text-white">
+        {/* <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mt-8 sm:mt-10 mb-3 sm:mb-4 text-white">
           Tenloops
         </h2>
         <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
@@ -22,7 +22,7 @@ const ProductTools: React.FC = () => {
           className="text-white hover:text-white/80 underline text-sm sm:text-base"
         >
           Learn more about Tenloops →
-        </a>
+        </a> */}
 
         <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4 text-white">
           Fraqtion
