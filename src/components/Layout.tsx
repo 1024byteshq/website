@@ -1,6 +1,5 @@
 import { useState, useEffect, ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
-import backgroundImage from "../assets/images/steve-johnson-unsplash.jpg";
 import Footer from "./Footer";
 
 interface LayoutProps {
@@ -21,15 +20,7 @@ const Layout = ({ children }: LayoutProps) => {
   }, [location]);
 
   return (
-    <div
-      className="min-h-screen flex flex-col relative"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-      }}
-    >
+    <div className="min-h-screen flex flex-col relative bg-black/90">
       <div className="absolute inset-0 bg-black/50 backdrop-blur-[30px] z-0"></div>
 
       {!isHomePage && (
