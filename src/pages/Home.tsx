@@ -80,7 +80,7 @@ const Home: React.FC = () => {
       </nav>
 
       {/* Mobile Rotated Text */}
-      <div className="md:hidden absolute right-8 top-1/2 -translate-y-1/2 z-10">
+      <div className="md:hidden absolute right-8 top-1/2 -translate-y-1/2 z-10 mt-8">
         <h1
           className={`font-orbitron text-5xl sm:text-6xl font-bold text-white tracking-wider whitespace-nowrap origin-right rotate-90 ${isGlitching ? "glitch-text" : ""}`}
           data-text={`${displayText} Bytes`}
