@@ -46,15 +46,18 @@ const Home: React.FC = () => {
         <Link to="/about" className="nav-link text-2xl text-white">
           About
         </Link>
+        <Link to="/node" className="nav-link text-2xl text-white">
+          Node
+        </Link>
         <Link to="/product-tools" className="nav-link text-2xl text-white">
           Product & Tools
         </Link>
-        <Link to="/community" className="nav-link text-2xl text-white">
+        {/* <Link to="/community" className="nav-link text-2xl text-white">
           Community
-        </Link>
-        <Link to="/contact" className="nav-link text-2xl text-white">
+        </Link> */}
+        {/* <Link to="/contact" className="nav-link text-2xl text-white">
           Contact
-        </Link>
+        </Link> */}
       </nav>
 
       {/* Desktop Navigation */}
@@ -71,12 +74,15 @@ const Home: React.FC = () => {
         <Link to="/product-tools" className="nav-link text-xl text-white">
           Product & Tools
         </Link>
-        <Link to="/community" className="nav-link text-xl text-white">
+        <Link to="/node" className="nav-link text-xl text-white">
+          Node
+        </Link>
+        {/* <Link to="/community" className="nav-link text-xl text-white">
           Community
         </Link>
         <Link to="/contact" className="nav-link text-xl text-white">
           Contact
-        </Link>
+        </Link> */}
       </nav>
 
       {/* Mobile Rotated Text */}

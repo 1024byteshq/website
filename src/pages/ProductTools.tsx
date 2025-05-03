@@ -24,7 +24,7 @@ const ProductTools: React.FC = () => {
           Learn more about Tenloops →
         </a> */}
 
-        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4 text-white">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4 text-[#a0ff6a]">
           Fraqtion
         </h2>
         <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
@@ -40,6 +40,27 @@ const ProductTools: React.FC = () => {
         >
           Learn more about Fraqtion →
         </a>
+
+        <div></div>
+
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4 text-[#a0ff6a]">
+          Evolvables
+        </h2>
+        <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
+          Evolvables is a DeFi art experiment on LTO Network with an incentive
+          layer on Solana. It fuses digital art and AI creations into a gamified
+          system where users can contribute, earn, and own unique assets.
+        </p>
+        <a
+          href="https://evolvables.xyz"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white hover:text-white/80 underline text-sm sm:text-base"
+        >
+          Learn more about Evolvables →
+        </a>
+
+        <div></div>
       </div>
     </div>
   );

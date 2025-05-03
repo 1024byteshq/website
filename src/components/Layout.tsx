@@ -35,7 +35,7 @@ const Layout = ({ children }: LayoutProps) => {
               <div className="hidden md:flex items-center space-x-8">
                 <Link
                   to="/about"
-                  className="nav-link text-white hover:text-white/80"
+                  className="nav-link text-white hover:text-[#a0ff6a]/80"
                 >
                   About
                 </Link>
@@ -44,22 +44,29 @@ const Layout = ({ children }: LayoutProps) => {
                 </Link> */}
                 <Link
                   to="/product-tools"
-                  className="nav-link text-white hover:text-white/80"
+                  className="nav-link text-white hover:text-[#a0ff6a]/80"
                 >
                   Product and Tools
                 </Link>
+
                 <Link
+                  to="/node"
+                  className="nav-link text-white hover:text-[#a0ff6a]/80"
+                >
+                  Node
+                </Link>
+                {/* <Link
                   to="/community"
                   className="nav-link text-white hover:text-white/80"
                 >
                   Community
-                </Link>
-                <Link
+                </Link> */}
+                {/* <Link
                   to="/contact"
                   className="nav-link text-white hover:text-white/80"
                 >
                   Contact
-                </Link>
+                </Link> */}
               </div>
 
               {/* Mobile Menu Button */}
@@ -91,22 +98,31 @@ const Layout = ({ children }: LayoutProps) => {
               <div className="py-4 space-y-4">
                 <Link
                   to="/about"
-                  className="block nav-link text-white hover:text-white/80"
+                  className="block nav-link text-white hover:text-[#a0ff6a]/80"
                 >
                   About
                 </Link>
                 {/* <Link to="/rd" className="block nav-link">
                   R&D
                 </Link> */}
-                <Link to="/product-tools" className="block nav-link">
+                <Link
+                  to="/product-tools"
+                  className="block nav-link text-white hover:text-[#a0ff6a]/80"
+                >
                   Product and Tools
                 </Link>
-                <Link to="/community" className="block nav-link">
+                {/* <Link to="/community" className="block nav-link">
                   Community
+                </Link> */}
+                <Link
+                  to="/node"
+                  className="block nav-link text-white hover:text-[#a0ff6a]/80"
+                >
+                  Node
                 </Link>
-                <Link to="/contact" className="block nav-link">
+                {/* <Link to="/contact" className="block nav-link">
                   Contact
-                </Link>
+                </Link> */}
               </div>
             </div>
           </nav>

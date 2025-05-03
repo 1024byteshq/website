@@ -11,25 +11,21 @@ const About: React.FC = () => {
         <p className="text-base sm:text-md lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
           We’re a small but ambitious engineering and research lab, building
           technology that actually matters. At 1024 Bytes, we don’t just ship
-          features, we design systems with real depth, aiming to create tools
-          and platforms that stand the test of time.
+          features, we design systems with real value.
         </p>
 
         <p className="text-base sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
           As technology becomes more woven into everyday life, we believe the
           real breakthroughs won’t come from hype cycles, but from quietly
-          solving the hard, overlooked problems that shape how the world works,
-          from commerce to public services, science to society. Our mission is
-          simple: use software, AI, and blockchain to power meaningful change.
-          No buzzwords, just focused, systems-driven engineering with impact at
-          the core.
+          solving the hard, overlooked problems that shape how the world works.
+          Our mission is simple: use software, AI, and blockchain to build
+          meaningful solutions.
         </p>
 
         <p className="text-base sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
-          We keep things lean, driven by talent and curiosity, not red tape. And
-          we move fast building with purpose, and just the right amount of
-          rebellion. One byte at a time, we’re shaping the future we actually
-          want to live in.
+          Currently we are bullish about real world assets(RWAs) on-chain and
+          AI-powered tools that can drive businesses and communities. One byte
+          at a time, we’re shaping the future we want to live in.
         </p>
       </div>
     </div>

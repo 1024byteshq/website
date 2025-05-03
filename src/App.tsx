@@ -7,6 +7,7 @@ import RD from "./pages/RD";
 import ProductTools from "./pages/ProductTools";
 import Contact from "./pages/Contact";
 import Community from "./pages/Community";
+import Nodes from "./pages/Nodes";
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Route path="/product-tools" element={<ProductTools />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/community" element={<Community />} />
+        <Route path="/node" element={<Nodes />} />
       </Routes>
     </Layout>
   );
