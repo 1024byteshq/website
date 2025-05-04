@@ -46,9 +46,9 @@ const Nodes: React.FC = () => {
           How to Stake
         </h3>
         <p className="text-gray-300 text-sm sm:text-base mb-4 leading-relaxed">
-          1. Go to your LTO wallet or use a supported exchange to buy LTO.
+          1. Get LTO from a supported exchange or DEX.
           <br />
-          2. Choose the option to lease your LTO via the LTO Wallet.
+          2. Go to your LTO wallet & choose the option to lease your LTO.
           <br />
           3. Use the node address below:
         </p>
