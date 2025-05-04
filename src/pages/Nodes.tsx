@@ -31,12 +31,29 @@ const Nodes: React.FC = () => {
           Why lease with 1024 Node?
         </h3>
         <ul className="space-y-4 text-gray-300 text-sm sm:text-base list-disc list-inside">
-          <li>🔧 Run by software engineers building on LTO every day</li>
-          <li>🧠 Contributes to our efforts to build on LTO</li>
-          <li>💰 Only 5% commission, 95% of rewards go to you</li>
           <li>
-            🌍 Most of our team is based in Africa and we see daily
-            opportunities where LTO can drive real change
+            🔧 Operated by experienced software engineers actively building real
+            products on LTO
+          </li>
+          <li>
+            🧠 Your lease powers new tools, libraries, and infrastructure within
+            the LTO ecosystem
+          </li>
+          <li>
+            💰 95% of rewards go directly to you — only 5% commission, among the
+            lowest on the network
+          </li>
+          <li>
+            🌍 Most of our team is based in Africa, where we're using LTO to
+            solve real-world problems
+          </li>
+          <li>
+            🚀 By leasing to us, you support innovation that increases demand
+            and value for LTO
+          </li>
+          <li>
+            🔒 Transparent operations and regular updates on how your lease
+            fuels progress
           </li>
         </ul>
       </div>
