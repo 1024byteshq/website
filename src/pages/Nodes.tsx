@@ -35,8 +35,8 @@ const Nodes: React.FC = () => {
           <li>🧠 Contributes to our efforts to build on LTO</li>
           <li>💰 Only 5% commission, 95% of rewards go to you</li>
           <li>
-            🌍 Our team is based in Africa and we see daily opportunities where
-            LTO can drive real change
+            🌍 Most of our team is based in Africa and we see daily
+            opportunities where LTO can drive real change
           </li>
         </ul>
       </div>
@@ -46,9 +46,9 @@ const Nodes: React.FC = () => {
           How to Stake
         </h3>
         <p className="text-gray-300 text-sm sm:text-base mb-4 leading-relaxed">
-          1. Go to your LTO wallet or use a supported exchange.
+          1. Go to your LTO wallet or use a supported exchange to buy LTO.
           <br />
-          2. Choose the option to lease your LTO.
+          2. Choose the option to lease your LTO via the LTO Wallet.
           <br />
           3. Use the node address below:
         </p>
