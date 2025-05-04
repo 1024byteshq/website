@@ -36,8 +36,8 @@ const Nodes: React.FC = () => {
             products on LTO
           </li>
           <li>
-            🧠 Your lease powers new tools, libraries, and infrastructure within
-            the LTO ecosystem
+            🧠 Your lease powers new tools and LTO-Native apps which we are
+            building within the LTO ecosystem
           </li>
           <li>
             💰 95% of rewards go directly to you — only 5% commission, among the
