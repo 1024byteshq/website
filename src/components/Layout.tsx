@@ -49,12 +49,12 @@ const Layout = ({ children }: LayoutProps) => {
                   Product and Tools
                 </Link>
 
-                <Link
+                {/* <Link
                   to="/node"
                   className="nav-link text-white hover:text-[#a0ff6a]/80"
                 >
                   Node
-                </Link>
+                </Link> */}
                 {/* <Link
                   to="/community"
                   className="nav-link text-white hover:text-white/80"
@@ -114,12 +114,12 @@ const Layout = ({ children }: LayoutProps) => {
                 {/* <Link to="/community" className="block nav-link">
                   Community
                 </Link> */}
-                <Link
+                {/* <Link
                   to="/node"
                   className="block nav-link text-white hover:text-[#a0ff6a]/80"
                 >
                   Node
-                </Link>
+                </Link> */}
                 {/* <Link to="/contact" className="block nav-link">
                   Contact
                 </Link> */}
