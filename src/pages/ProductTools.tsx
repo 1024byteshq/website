@@ -47,9 +47,9 @@ const ProductTools: React.FC = () => {
           Evolvables
         </h2>
         <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
-          Evolvables is a DeFi art experiment on LTO Network with an incentive
-          layer on Solana. It fuses digital art and AI creations into a gamified
-          system where users can contribute, earn, and own unique assets.
+          Evolvables is an AI-powered collaborative art protocol for
+          coordinating human creativity into proof-of-art for powering on-chain
+          utilities.
         </p>
         <a
           href="https://evolvables.xyz"

@@ -24,8 +24,8 @@ const About: React.FC = () => {
 
         <p className="text-base sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
           Currently we are bullish about real world assets(RWAs) on-chain and
-          AI-powered tools that can drive businesses and communities. One byte
-          at a time, we’re shaping the future we want to live in.
+          AI-powered tools that can drive communities and defi participation.
+          One byte at a time, we’re shaping the future we want to live in.
         </p>
       </div>
     </div>
