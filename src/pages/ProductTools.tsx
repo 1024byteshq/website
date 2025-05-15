@@ -7,23 +7,6 @@ const ProductTools: React.FC = () => {
         Products & Tools
       </h1>
       <div className="max-w-3xl mx-auto">
-        {/* <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mt-8 sm:mt-10 mb-3 sm:mb-4 text-white">
-          Tenloops
-        </h2>
-        <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
-          We are building a platform that allows vendors across the world to
-          easily launch AI-powered storefronts, thus revolutionizing how
-          commerce works across the web.
-        </p>
-        <a
-          href="https://tenloops.io"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-white/80 underline text-sm sm:text-base"
-        >
-          Learn more about Tenloops →
-        </a> */}
-
         <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4 text-[#a0ff6a]">
           Fraqtion
         </h2>
@@ -33,7 +16,7 @@ const ProductTools: React.FC = () => {
           on-chain liquidity collapses into a single, pluggable ecosystem.
         </p>
         <a
-          href="https://app.fraqtion.xyz"
+          href="https://fraqtion.xyz"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-white/80 underline text-sm sm:text-base"
