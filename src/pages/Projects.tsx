@@ -1,10 +1,10 @@
 import React from "react";
 
-const ProductTools: React.FC = () => {
+const Projects: React.FC = () => {
   return (
     <div className="container mx-auto mt-20 px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
       <h1 className="text-3xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 mt-8 sm:mt-16 text-white">
-        Products & Tools
+        Project Highlights
       </h1>
       <div className="max-w-3xl mx-auto">
         <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4 text-[#a0ff6a]">
@@ -49,4 +49,4 @@ const ProductTools: React.FC = () => {
   );
 };
 
-export default ProductTools;
+export default Projects;

@@ -9,7 +9,7 @@ const Menu: React.FC = () => {
   const menuItems = [
     { name: "About", path: "/about" },
     // { name: "R&D", path: "/rd" },
-    { name: "Product and Tools", path: "/product-tools" },
+    { name: "Projects", path: "/projects" },
     { name: "Contact", path: "/contact" },
   ];
 

@@ -49,12 +49,12 @@ const Home: React.FC = () => {
         {/* <Link to="/node" className="nav-link text-2xl text-white">
           Node
         </Link> */}
-        <Link to="/product-tools" className="nav-link text-2xl text-white">
-          Product & Tools
+        <Link to="/services" className="nav-link text-2xl text-white">
+          Services
         </Link>
-        {/* <Link to="/community" className="nav-link text-2xl text-white">
-          Community
-        </Link> */}
+        <Link to="/projects" className="nav-link text-2xl text-white">
+          Project Highlights
+        </Link>
         {/* <Link to="/contact" className="nav-link text-2xl text-white">
           Contact
         </Link> */}
@@ -71,8 +71,11 @@ const Home: React.FC = () => {
         <Link to="/about" className="nav-link text-xl text-white">
           About
         </Link>
-        <Link to="/product-tools" className="nav-link text-xl text-white">
-          Product & Tools
+        <Link to="/services" className="nav-link text-xl text-white">
+          Services
+        </Link>
+        <Link to="/projects" className="nav-link text-2xl text-white">
+          Project Highlights
         </Link>
         {/* <Link to="/node" className="nav-link text-xl text-white">
           Node

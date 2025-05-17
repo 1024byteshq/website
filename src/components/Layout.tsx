@@ -43,12 +43,17 @@ const Layout = ({ children }: LayoutProps) => {
                   R&D
                 </Link> */}
                 <Link
-                  to="/product-tools"
+                  to="/projects"
                   className="nav-link text-white hover:text-[#a0ff6a]/80"
                 >
-                  Product and Tools
+                  Projects
                 </Link>
-
+                <Link
+                  to="/services"
+                  className="nav-link text-white hover:text-[#a0ff6a]/80"
+                >
+                  Services
+                </Link>
                 {/* <Link
                   to="/node"
                   className="nav-link text-white hover:text-[#a0ff6a]/80"
@@ -61,12 +66,12 @@ const Layout = ({ children }: LayoutProps) => {
                 >
                   Community
                 </Link> */}
-                {/* <Link
+                <Link
                   to="/contact"
                   className="nav-link text-white hover:text-white/80"
                 >
                   Contact
-                </Link> */}
+                </Link>
               </div>
 
               {/* Mobile Menu Button */}
@@ -106,10 +111,16 @@ const Layout = ({ children }: LayoutProps) => {
                   R&D
                 </Link> */}
                 <Link
-                  to="/product-tools"
+                  to="/projects"
                   className="block nav-link text-white hover:text-[#a0ff6a]/80"
                 >
-                  Product and Tools
+                  Projects
+                </Link>
+                <Link
+                  to="/services"
+                  className="block nav-link text-white hover:text-[#a0ff6a]/80"
+                >
+                  Services
                 </Link>
                 {/* <Link to="/community" className="block nav-link">
                   Community
@@ -120,9 +131,9 @@ const Layout = ({ children }: LayoutProps) => {
                 >
                   Node
                 </Link> */}
-                {/* <Link to="/contact" className="block nav-link">
+                <Link to="/contact" className="block nav-link">
                   Contact
-                </Link> */}
+                </Link>
               </div>
             </div>
           </nav>
