@@ -3,29 +3,33 @@ import React from "react";
 const About: React.FC = () => {
   return (
     <div className="container mx-auto px-4 mt-20 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
-      <h1 className="text-3xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 mt-8 sm:mt-16 text-white">
-        Why?
+      <h1 className="text-4xl sm:text-5xl font-bold text-white mb-8">
+        Why We Exist
       </h1>
 
-      <div className="max-w-3xl mx-auto">
-        <p className="text-base sm:text-md lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
-          We’re a small but ambitious engineering and research lab, building
-          technology that actually matters. At 1024 Bytes, we don’t just ship
-          features, we design systems with real value.
+      <div className="max-w-3xl mx-auto space-y-6 text-white/90 text-lg leading-relaxed">
+        <p>
+          1024bytes is an engineering and research studio for founders building
+          at the edge - especially those experimenting with AI and other cool
+          ideas.
         </p>
 
-        <p className="text-base sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
-          As technology becomes more woven into everyday life, we believe the
-          real breakthroughs won’t come from hype cycles, but from quietly
-          solving the hard, overlooked problems that shape how the world works.
-          Our mission is simple: use software, AI, and blockchain to build
-          meaningful solutions.
+        <p>
+          We specialize in turning vibe-coded prototypes and scattered ideas
+          into secure, usable, and scalable systems. From fixing broken flows to
+          helping you launch something real, we meet you where you are and ship
+          what matters.
         </p>
 
-        <p className="text-base sm:text-base lg:text-lg mb-4 sm:mb-6 text-white/90 leading-relaxed">
-          Currently we are bullish about real world assets(RWAs) on-chain and
-          AI-powered tools that can drive communities and defi participation.
-          One byte at a time, we’re shaping the future we want to live in.
+        <p>
+          We care less about industry hype and more about systems that stand the
+          test of time. Whether it’s a backend powered by LLMs or a Saas tool
+          solving problems in your own business.
+        </p>
+
+        <p>
+          One byte at a time, we’re shaping the kind of internet we want to live
+          in. Less noise. More clarity. Better code.
         </p>
       </div>
     </div>

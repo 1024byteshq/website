@@ -7,62 +7,78 @@ const Services: React.FC = () => {
       {/* Hero Section */}
       <div className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white">
-          Build better with 1024
+          From Vibe Code to Working Product
         </h1>
         <p className="text-lg sm:text-xl lg:text-2xl text-white/80">
-          A dev partner for your craziest ideas. Blockchain, Web, Mobile – all
-          handled.
+          We help founders ship AI-powered tools, blockchain apps, and
+          experimental ideas — fast.
         </p>
       </div>
 
       {/* Services List Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* Web Development */}
+        {/* AI & LLM Engineering */}
         <div className="bg-white/10 rounded-2xl p-6 shadow-md hover:scale-105 transition-transform">
-          <h2 className="text-xl font-bold mb-2 text-white">Web Development</h2>
+          <h2 className="text-xl font-bold mb-2 text-white">
+            AI & LLM Engineering
+          </h2>
           <p className="text-white/80">
-            Get a developer buddy for your vibe coding mess.
+            Fine-tune prompts, build memory systems, and turn LLM experiments
+            into real workflows with vector search, embeddings, and context.
           </p>
         </div>
 
-        {/* Blockchain Development */}
+        {/* Vibe Code Rescue */}
+        <div className="bg-white/10 rounded-2xl p-6 shadow-md hover:scale-105 transition-transform">
+          <h2 className="text-xl font-bold mb-2 text-white">
+            Vibe Code to MVP
+          </h2>
+          <p className="text-white/80">
+            Built something that barely works? We’ll clean it up, fix the edge
+            cases, and deploy it properly without judging your git commit
+            history.
+          </p>
+        </div>
+
+        {/* Blockchain Development
         <div className="bg-white/10 rounded-2xl p-6 shadow-md hover:scale-105 transition-transform">
           <h2 className="text-xl font-bold mb-2 text-white">
             Blockchain Development
           </h2>
           <p className="text-white/80">
-            Protocols, dApps, smart contracts — we've built across EVM, Solana.
+            Smart contracts, NFTs, DAOs, or data anchoring — across Solana, EVM,
+            and Layer 2s. Production-ready and gas-conscious.
+          </p>
+        </div> */}
+
+        {/* Fullstack Engineering */}
+        <div className="bg-white/10 rounded-2xl p-6 shadow-md hover:scale-105 transition-transform">
+          <h2 className="text-xl font-bold mb-2 text-white">
+            Web & Mobile Engineering
+          </h2>
+          <p className="text-white/80">
+            From React dashboards to full-stack platforms and mobile apps —
+            we’ll make it fast, secure, and smooth.
           </p>
         </div>
 
-        {/* Mobile App Development */}
+        {/* Infra & DevOps */}
         <div className="bg-white/10 rounded-2xl p-6 shadow-md hover:scale-105 transition-transform">
           <h2 className="text-xl font-bold mb-2 text-white">
-            Mobile App Development
+            Infra & System Integrations
           </h2>
           <p className="text-white/80">
-            Build clean, performant apps that feel native on iOS and Android.
+            API orchestration, CI/CD pipelines, Dockerized deployments, cloud
+            provisioning, everything wired and ready.
           </p>
         </div>
 
-        {/* System Integrations & DevOps */}
+        {/* Tech for Founders */}
         <div className="bg-white/10 rounded-2xl p-6 shadow-md hover:scale-105 transition-transform">
-          <h2 className="text-xl font-bold mb-2 text-white">
-            System Integrations & DevOps
-          </h2>
+          <h2 className="text-xl font-bold mb-2 text-white">CTO-on-Demand</h2>
           <p className="text-white/80">
-            We wire it all together — infra, pipelines, security, and
-            observability.
-          </p>
-        </div>
-
-        {/* SME Service Management */}
-        <div className="bg-white/10 rounded-2xl p-6 shadow-md hover:scale-105 transition-transform">
-          <h2 className="text-xl font-bold mb-2 text-white">
-            SME Service Management
-          </h2>
-          <p className="text-white/80">
-            We manage your tech, so you can run your business.
+            No technical cofounder? No problem. We guide early product decisions
+            and keep your architecture sane from day one.
           </p>
         </div>
       </div>
@@ -70,8 +86,8 @@ const Services: React.FC = () => {
       {/* Call to Action Section */}
       <div className="text-center mt-12">
         <p className="text-lg sm:text-xl lg:text-2xl text-white/80 mb-4">
-          Need something different but slightly similar to what we do? We
-          probably still do it. Let's talk.
+          Not sure where your idea fits? We’ll help you figure it out. Let’s
+          build together.
         </p>
         <Link
           to="/contact"
