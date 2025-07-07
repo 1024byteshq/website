@@ -7,8 +7,8 @@ import RD from "./pages/RD";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Community from "./pages/Community";
-import Nodes from "./pages/Nodes";
 import Services from "./pages/Services";
+import PrivacyPolicy from "./pages/Policy";
 
 const App: React.FC = () => {
   return (
@@ -20,8 +20,8 @@ const App: React.FC = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/community" element={<Community />} />
-        <Route path="/node" element={<Nodes />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/policy" element={<PrivacyPolicy />} />
       </Routes>
     </Layout>
   );
