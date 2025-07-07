@@ -16,13 +16,21 @@ const Footer: React.FC = () => {
               Policy
             </a>
             <a
+              href="https://www.linkedin.com/company/1024bytes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/80 hover:text-white text-sm sm:text-base transition-colors"
+            >
+              LinkedIn
+            </a>
+            {/* <a
               href="https://github.com/1024byteshq"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/80 hover:text-white text-sm sm:text-base transition-colors"
             >
               GitHub
-            </a>
+            </a> */}
             <a
               href="https://x.com/1024bytesHQ"
               target="_blank"
