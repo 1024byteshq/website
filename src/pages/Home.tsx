@@ -62,16 +62,16 @@ const Home: React.FC = () => {
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex items-center space-x-12 mb-8 z-10">
-        <Link to="/" className="nav-link text-xl text-black">
+        <Link to="/" className="nav-link text-2xl text-black">
           Home
         </Link>
         {/* <Link to="/rd" className="nav-link text-xl">
           R&D
         </Link> */}
-        <Link to="/about" className="nav-link text-xl text-black">
+        <Link to="/about" className="nav-link text-2xl text-black">
           About
         </Link>
-        <Link to="/services" className="nav-link text-xl text-black">
+        <Link to="/services" className="nav-link text-2xl text-black">
           Services
         </Link>
         <Link to="/projects" className="nav-link text-2xl text-black">
