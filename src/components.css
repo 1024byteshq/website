@@ -8,15 +8,15 @@
   }
 
   .btn-primary {
-    @apply bg-white/20 text-white hover:bg-white/30 focus:ring-white/50;
+    @apply bg-white/20 text-black hover:bg-white/30 focus:ring-white/50;
   }
 
   .btn-secondary {
-    @apply border-2 border-white/30 text-white hover:bg-white/10 focus:ring-white/50;
+    @apply border-2 border-white/30 text-[#6D52B7] hover:bg-white/10 focus:ring-white/50;
   }
 
   .nav-link {
-    @apply text-white/80 hover:text-white transition-colors duration-300;
+    @apply text-black/80 hover:text-[#6D52B7] transition-colors duration-300;
   }
 
   /* Network Animation */
@@ -53,7 +53,7 @@
   }
 
   .network-line {
-    stroke: rgba(255, 255, 255, 0.3);
+    stroke: rgba(84, 82, 82, 0.306);
     stroke-width: 2;
     transition: all 0.2s ease;
   }
@@ -64,13 +64,13 @@
   }
 
   .network-node {
-    @apply absolute w-2 h-2 rounded-full bg-white/40;
+    @apply absolute w-2 h-2 rounded-full bg-black/40;
     transform-origin: center;
     transition: all 0.2s ease;
   }
 
   .network-node-active {
-    @apply bg-white/95;
+    @apply bg-black/95;
   }
 
   .network-node::before {
@@ -98,7 +98,7 @@
   .network-node-active::after {
     background: radial-gradient(
       circle,
-      rgba(255, 255, 255, 0.5) 0%,
+      rgba(51, 50, 50, 0.5) 0%,
       transparent 70%
     );
   }

@@ -37,22 +37,22 @@ const Home: React.FC = () => {
 
       {/* Mobile Navigation */}
       <nav className="md:hidden absolute bottom-8 left-8 flex flex-col items-start gap-6 z-10">
-        <Link to="/" className="nav-link text-2xl text-white">
+        <Link to="/" className="nav-link text-2xl text-black">
           Home
         </Link>
         {/* <Link to="/rd" className="nav-link text-2xl">
           R&D
         </Link> */}
-        <Link to="/about" className="nav-link text-2xl text-white">
+        <Link to="/about" className="nav-link text-2xl text-black">
           About
         </Link>
         {/* <Link to="/node" className="nav-link text-2xl text-white">
           Node
         </Link> */}
-        <Link to="/services" className="nav-link text-2xl text-white">
+        <Link to="/services" className="nav-link text-2xl text-black">
           Services
         </Link>
-        <Link to="/projects" className="nav-link text-2xl text-white">
+        <Link to="/projects" className="nav-link text-2xl text-black">
           Project Highlights
         </Link>
         {/* <Link to="/contact" className="nav-link text-2xl text-white">
@@ -62,19 +62,19 @@ const Home: React.FC = () => {
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex items-center space-x-12 mb-8 z-10">
-        <Link to="/" className="nav-link text-xl text-white">
+        <Link to="/" className="nav-link text-xl text-black">
           Home
         </Link>
         {/* <Link to="/rd" className="nav-link text-xl">
           R&D
         </Link> */}
-        <Link to="/about" className="nav-link text-xl text-white">
+        <Link to="/about" className="nav-link text-xl text-black">
           About
         </Link>
-        <Link to="/services" className="nav-link text-xl text-white">
+        <Link to="/services" className="nav-link text-xl text-black">
           Services
         </Link>
-        <Link to="/projects" className="nav-link text-2xl text-white">
+        <Link to="/projects" className="nav-link text-2xl text-black">
           Project Highlights
         </Link>
         {/* <Link to="/node" className="nav-link text-xl text-white">
@@ -91,7 +91,7 @@ const Home: React.FC = () => {
       {/* Mobile Rotated Text */}
       <div className="md:hidden absolute right-8 top-1/2 -translate-y-1/2 z-10 mt-8">
         <h1
-          className={`font-orbitron text-5xl sm:text-6xl font-bold text-white tracking-wider whitespace-nowrap origin-right rotate-90 ${isGlitching ? "glitch-text" : ""}`}
+          className={`font-orbitron text-5xl sm:text-6xl font-bold text-black tracking-wider whitespace-nowrap origin-right rotate-90 ${isGlitching ? "glitch-text" : ""}`}
           data-text={`${displayText} Bytes`}
         >
           {displayText} Bytes
@@ -100,7 +100,7 @@ const Home: React.FC = () => {
 
       {/* Desktop Centered Text */}
       <h1
-        className={`hidden md:block font-orbitron text-8xl lg:text-9xl font-bold text-white tracking-wider text-center z-10 ${isGlitching ? "glitch-text" : ""}`}
+        className={`hidden md:block font-orbitron text-8xl lg:text-9xl font-bold text-[#000] tracking-wider text-center z-10 ${isGlitching ? "glitch-text" : ""}`}
         data-text={`${displayText} Bytes`}
       >
         {displayText} Bytes

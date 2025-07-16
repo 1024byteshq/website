@@ -20,11 +20,11 @@ const Layout = ({ children }: LayoutProps) => {
   }, [location]);
 
   return (
-    <div className="min-h-screen flex flex-col relative bg-black/90">
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-[30px] z-0"></div>
+    <div className="min-h-screen flex flex-col relative bg-[#fafaf5]/90">
+      <div className="absolute inset-0 bg-[#fafaf5]/50 backdrop-blur-[30px] z-0"></div>
 
       {!isHomePage && (
-        <header className="fixed w-full bg-black/30 backdrop-blur-sm z-50 border-b border-white/10">
+        <header className="fixed w-full bg-black backdrop-blur-sm z-50 border-b border-white/10">
           <nav className="container mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
               <Link to="/" className="text-2xl font-bold text-white">
@@ -68,7 +68,7 @@ const Layout = ({ children }: LayoutProps) => {
                 </Link> */}
                 <Link
                   to="/contact"
-                  className="nav-link text-white hover:text-white/80"
+                  className="nav-link text-white hover:text-[#a0ff6a]/80"
                 >
                   Contact
                 </Link>
@@ -131,7 +131,10 @@ const Layout = ({ children }: LayoutProps) => {
                 >
                   Node
                 </Link> */}
-                <Link to="/contact" className="block nav-link">
+                <Link
+                  to="/contact"
+                  className="block nav-link text-white hover:text-[#a0ff6a]/80"
+                >
                   Contact
                 </Link>
               </div>
