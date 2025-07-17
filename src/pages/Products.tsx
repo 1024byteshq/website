@@ -12,7 +12,7 @@ const Products: React.FC = () => {
         <div className="border-2 border-black bg-[#92e363] p-6 sm:p-8 rounded-md shadow-md hover:shadow-xl transition-shadow duration-300">
           <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
             <img
-              src="src/assets/images/fraqtion.png"
+              src="/assets/fraqtion.png"
               alt="Fraqtion Intelligence"
               className="w-full lg:w-1/3 object-cover "
             />
