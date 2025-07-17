@@ -52,8 +52,8 @@ const Home: React.FC = () => {
         <Link to="/services" className="nav-link text-2xl text-black">
           Services
         </Link>
-        <Link to="/projects" className="nav-link text-2xl text-black">
-          Project Highlights
+        <Link to="/products" className="nav-link text-2xl text-black">
+          Product Highlights
         </Link>
         {/* <Link to="/contact" className="nav-link text-2xl text-white">
           Contact
@@ -74,8 +74,8 @@ const Home: React.FC = () => {
         <Link to="/services" className="nav-link text-2xl text-black">
           Services
         </Link>
-        <Link to="/projects" className="nav-link text-2xl text-black">
-          Project Highlights
+        <Link to="/products" className="nav-link text-2xl text-black">
+          Product Highlights
         </Link>
         {/* <Link to="/node" className="nav-link text-xl text-white">
           Node

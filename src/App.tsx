@@ -4,7 +4,7 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import RD from "./pages/RD";
-import Projects from "./pages/Projects";
+import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import Community from "./pages/Community";
 import Services from "./pages/Services";
@@ -17,7 +17,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/rd" element={<RD />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/community" element={<Community />} />
         <Route path="/services" element={<Services />} />

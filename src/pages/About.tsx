@@ -9,27 +9,28 @@ const About: React.FC = () => {
 
       <div className="max-w-3xl mx-auto space-y-6 text-lg leading-relaxed">
         <p className="text-black/80">
-          1024bytes is an engineering and research studio for founders building
-          at the edge - especially those experimenting with AI and other cool
-          ideas.
+          1024 Bytes exists to help shape a more intentional and integrated
+          internet; one where ideas are tested rigorously, systems are built to
+          endure, and intelligence is embedded at the core of software.
         </p>
 
         <p className="text-black/80">
-          We specialize in turning vibe-coded prototypes and scattered ideas
-          into secure, usable, and scalable systems. From fixing broken flows to
-          helping you launch something real, we meet you where you are and ship
-          what matters.
+          We work with signal, not noise. Our focus is on building systems that
+          are simple, powerful and useful whether they're internal tools,
+          agentic infrastructures, or foundational codebases for real-world
+          impact.
         </p>
 
         <p className="text-black/80">
-          We care less about industry hype and more about systems that stand the
-          test of time. Whether it’s a backend powered by LLMs or a Saas tool
-          solving problems in your own business.
+          We collaborate with founders, researchers, and engineers who want to
+          move beyond the demo and design software that’s resilient,
+          context-aware, and future-facing.
         </p>
 
-        <p>
-          One byte at a time, we’re shaping the kind of internet we want to live
-          in. Less noise. More clarity. Better code.
+        <p className="text-black/80">
+          Our mission is simple: build what matters, sharpen what exists, and
+          help technical ideas grow into long-term value; one system, one
+          insight, one byte at a time.
         </p>
       </div>
     </div>

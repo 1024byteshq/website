@@ -43,10 +43,10 @@ const Layout = ({ children }: LayoutProps) => {
                   R&D
                 </Link> */}
                 <Link
-                  to="/projects"
+                  to="/products"
                   className="nav-link text-white hover:text-[#a0ff6a]/80"
                 >
-                  Projects
+                  Products
                 </Link>
                 <Link
                   to="/services"
@@ -111,10 +111,10 @@ const Layout = ({ children }: LayoutProps) => {
                   R&D
                 </Link> */}
                 <Link
-                  to="/projects"
+                  to="/products"
                   className="block nav-link text-white hover:text-[#a0ff6a]/80"
                 >
-                  Projects
+                  Products
                 </Link>
                 <Link
                   to="/services"

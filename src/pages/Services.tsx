@@ -7,93 +7,74 @@ const Services: React.FC = () => {
       {/* Hero Section */}
       <div className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-black">
-          From Vibe Code to Working Product
+          From Vibe Code to Intelligence Systems
         </h1>
         <p className="text-lg sm:text-xl lg:text-2xl text-black/80">
-          We help founders ship AI-powered tools, blockchain apps, and
-          experimental ideas fast.
+          We help ambitious teams turn prototypes and research into real-world
+          AI-powered infrastructure.
         </p>
       </div>
 
-      {/* Services List Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* AI & LLM Engineering */}
-        <div className="bg-white/10 rounded-2xl p-6 shadow-md hover:scale-105 transition-transform">
+      {/* Services Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Vibe Code to Stability */}
+        <div className="bg-white/10 border-2 border-black rounded-md p-6 shadow-md hover:scale-105 transition-transform">
           <h2 className="text-xl font-bold mb-2 text-black">
-            AI & LLM Engineering
+            Vibe Code to Stability
           </h2>
           <p className="text-black/80">
-            Fine-tune prompts, build memory systems, and turn LLM experiments
-            into real workflows with vector search, embeddings, and context.
+            From unstable prototypes to production systems; we refactor,
+            stabilize, and prep your product to scale.
           </p>
         </div>
 
-        {/* Vibe Code Rescue */}
-        <div className="bg-white/10 rounded-2xl p-6 shadow-md hover:scale-105 transition-transform">
+        {/* LLM & Agentic Systems */}
+        <div className="bg-white/10 border-2 border-black rounded-md p-6 shadow-md hover:scale-105 transition-transform">
           <h2 className="text-xl font-bold mb-2 text-black">
-            Vibe Code to MVP
+            LLM & Agentic Systems
           </h2>
           <p className="text-black/80">
-            Built something that barely works? We’ll clean it up, fix the edge
-            cases, and deploy it properly without judging your git commit
-            history.
+            We build context-aware agents, internal copilots, and AI workflows
+            with memory, vector search, and embedded logic.
           </p>
         </div>
 
-        {/* Blockchain Development
-        <div className="bg-white/10 rounded-2xl p-6 shadow-md hover:scale-105 transition-transform">
-          <h2 className="text-xl font-bold mb-2 text-white">
-            Blockchain Development
-          </h2>
-          <p className="text-white/80">
-            Smart contracts, NFTs, DAOs, or data anchoring — across Solana, EVM,
-            and Layer 2s. Production-ready and gas-conscious.
-          </p>
-        </div> */}
-
-        {/* Fullstack Engineering */}
-        <div className="bg-white/10 rounded-2xl p-6 shadow-md hover:scale-105 transition-transform">
+        {/* Fraqtion Intelligence: Market & Strategy */}
+        <div className="bg-white/10 border-2 border-black rounded-md p-6 shadow-md hover:scale-105 transition-transform">
           <h2 className="text-xl font-bold mb-2 text-black">
-            Web & Mobile Engineering
+            Fraqtion Intelligence Setup
           </h2>
           <p className="text-black/80">
-            From React dashboards to full-stack platforms and mobile apps we’ll
-            make it fast, secure, and smooth.
+            Connect to our curated data bank and AI-powered infra to setup
+            visualizations on real-time market shifts, customer trends, and
+            product signals. All in one dashboard, built to sharpen your next
+            move or investment.
           </p>
         </div>
 
-        {/* Infra & DevOps */}
-        <div className="bg-white/10 rounded-2xl p-6 shadow-md hover:scale-105 transition-transform">
+        {/* Custom Dashboards & Internal Intelligence */}
+        <div className="bg-white/10 border-2 border-black rounded-md p-6 shadow-md hover:scale-105 transition-transform">
           <h2 className="text-xl font-bold mb-2 text-black">
-            Infra & System Integrations
+            Internal Insight Systems
           </h2>
           <p className="text-black/80">
-            API orchestration, CI/CD pipelines, Dockerized deployments, cloud
-            provisioning, everything wired and ready.
-          </p>
-        </div>
-
-        {/* Tech for Founders */}
-        <div className="bg-white/10 rounded-2xl p-6 shadow-md hover:scale-105 transition-transform">
-          <h2 className="text-xl font-bold mb-2 text-black">CTO-on-Demand</h2>
-          <p className="text-black/80">
-            No technical cofounder? No problem. We guide early product decisions
-            and keep your architecture sane from day one.
+            Using the Fraqtion Intelligence stack, we build internal tools to
+            track product signals, customer trends, or LLM feedback all tailored
+            to your ops.
           </p>
         </div>
       </div>
 
-      {/* Call to Action Section */}
+      {/* CTA Section */}
       <div className="text-center mt-12">
         <p className="text-lg sm:text-xl lg:text-2xl text-black/80 mb-4">
-          Not sure where your idea fits? We’ll help you figure it out. Let’s
-          build together.
+          Don’t know where your system fits? Let’s figure it out together.
         </p>
         <Link
           to="/contact"
           className="inline-block bg-[#a0ff6a] text-black font-bold py-2 px-6 rounded-full hover:bg-[#a0ff6a]/80 transition-colors"
         >
-          Contact Us
+          Talk to Us
         </Link>
       </div>
     </div>
