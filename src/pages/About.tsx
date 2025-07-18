@@ -9,9 +9,10 @@ const About: React.FC = () => {
 
       <div className="max-w-3xl mx-auto space-y-6 text-lg leading-relaxed">
         <p className="text-black/80">
-          1024 Bytes exists to help shape a more intentional and integrated
-          internet; one where ideas are tested rigorously, systems are built to
-          endure, and intelligence is embedded at the core of software.
+          1024 - pronounced "Ten-Twenty-Four" Bytes exists to help shape a more
+          intentional and integrated internet; one where ideas are tested
+          rigorously, systems are built to endure, and intelligence is embedded
+          at the core of software.
         </p>
 
         <p className="text-black/80">
