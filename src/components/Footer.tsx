@@ -5,13 +5,19 @@ const Footer: React.FC = () => {
     <footer className="w-full py-6 text-center z-50">
       <div className="container mx-auto px-4">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
-          <span className="text-black text-sm sm:text-base">1024 Bytes</span>
+          <span className="text-black text-sm sm:text-base">
+            <img
+              src="/assets/half_1024_logo.png"
+              alt="1024"
+              className="w-20 "
+            />
+          </span>
           <div className="flex items-center gap-4">
             <a
               href="#/policy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black/80 hover:text-[#9E6BC7] text-sm sm:text-base transition-colors"
+              className="text-black/80 hover:text-[#9E6BC7] hover:underline  text-sm sm:text-base transition-colors"
             >
               Policy
             </a>
@@ -19,7 +25,7 @@ const Footer: React.FC = () => {
               href="https://www.linkedin.com/company/1024bytes"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black/80 hover:text-[#9E6BC7] text-sm sm:text-base transition-colors"
+              className="text-black/80 hover:text-[#9E6BC7] hover:underline text-sm sm:text-base transition-colors"
             >
               LinkedIn
             </a>
@@ -35,7 +41,7 @@ const Footer: React.FC = () => {
               href="https://x.com/1024bytesHQ"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black/80 hover:text-[#9E6BC7] text-sm sm:text-base transition-colors"
+              className="text-black/80 hover:text-[#9E6BC7] hover:underline text-sm sm:text-base transition-colors"
             >
               X
             </a>

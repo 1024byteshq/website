@@ -21,7 +21,14 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: [
+          "Space Grotesk",
+          "system-ui",
+          "Avenir",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
         mono: ["IBM Plex Mono", "monospace"],
         orbitron: ["Orbitron", "sans-serif"],
       },

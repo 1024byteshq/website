@@ -28,7 +28,11 @@ const Layout = ({ children }: LayoutProps) => {
           <nav className="container mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
               <Link to="/" className="text-2xl font-bold text-white">
-                1024
+                <img
+                  src="/assets/1024_logo.png"
+                  alt="1024"
+                  className="w-20 h-10"
+                />
               </Link>
 
               {/* Desktop Navigation */}

@@ -9,7 +9,7 @@ const Products: React.FC = () => {
 
       <div className="max-w-5xl mx-auto space-y-12">
         {/* Fraqtion Intelligence */}
-        <div className="border-2 border-black bg-[#92e363] p-6 sm:p-8 rounded-md shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div className="border-2 border-black bg-[#92e363]/80 p-6 sm:p-8 rounded-md shadow-md hover:shadow-xl transition-shadow duration-300">
           <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
             <img
               src="/assets/fraqtion.png"
