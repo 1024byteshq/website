@@ -1,8 +1,14 @@
 import React from "react";
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 const About: React.FC = () => {
+  const aboutRef = useScrollAnimation();
+
   return (
-    <div className="container mx-auto relative group cursor-pointer mt-20  md:mt-40">
+    <div
+      ref={aboutRef.ref}
+      className={`container mx-auto relative group cursor-pointer mt-20 md:mt-40 fade-in-up ${aboutRef.isVisible ? "visible" : ""}`}
+    >
       {/* Red background div that translates down on hover */}
       <div className=" hidden md:block border-4 border-black h-fit absolute  w-fit transition-transform duration-500 ease-out group-hover:-translate-y-10">
         <h1 className=" text-4xl p-4 sm:text-5xl font-bold text-black mb-8 bg-black/45 w-full">
@@ -51,15 +57,25 @@ const About: React.FC = () => {
           </p>
 
           <p className="text-black/80">
-            We partner with founders, researchers, and engineers to build
+            We specialize in <b>AI & Intelligence Systems</b>,{" "}
+            <b>Enterprise Development</b>,<b>Cloud Infrastructure</b>, and{" "}
+            <b>Specialized Solutions</b> including GovTech. From mobile
+            applications to production-ready systems, we help businesses
+            transform their technology stack and accelerate growth.
+          </p>
+
+          <p className="text-black/80">
+            We partner with{" "}
+            <b>founders, researchers, engineers, and enterprises</b> to build
             resilient, context-aware, and future-ready software that goes beyond
-            prototypes.
+            prototypes. Our process focuses on discovery, strategy, and
+            execution to ensure every solution delivers measurable value.
           </p>
 
           <p className="text-black/80">
             <b className="text-xl">Our mission; </b>to build what matters,
             sharpen what exists, and help technical ideas grow into long-term
-            value.
+            value through intelligent, scalable solutions.
           </p>
         </div>
       </div>
