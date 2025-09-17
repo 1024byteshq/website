@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
     description: "",
   });
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  //const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleInputChange = (
