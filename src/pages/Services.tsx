@@ -24,17 +24,6 @@ const Services: React.FC = () => {
           ],
         },
         {
-          title: "Fraqtion Intelligence Platform",
-          description:
-            "Connect to our curated data ecosystem for real-time market intelligence, customer insights, and strategic decision-making dashboards.",
-          features: [
-            "Market analysis",
-            "Customer trends",
-            "Investment signals",
-            "Real-time dashboards",
-          ],
-        },
-        {
           title: "Internal Intelligence Systems",
           description:
             "Custom B2B solutions that track product signals, customer behavior, and operational metrics tailored to your specific business processes.",

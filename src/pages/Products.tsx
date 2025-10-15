@@ -8,37 +8,51 @@ const Products: React.FC = () => {
       </h1>
 
       <div className="max-w-5xl mx-auto space-y-12">
-        {/* Fraqtion Intelligence */}
+        {/* Fraqtion Finance */}
         <div className="border-2 border-black bg-[#92e363]/80 p-6 sm:p-8 rounded-md shadow-md hover:shadow-xl transition-shadow duration-300">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
-            <img
-              src="/assets/fraqtion.png"
-              alt="Fraqtion Intelligence"
-              className="w-full lg:w-1/3 object-cover "
-            />
-            <div className="flex-1">
-              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-3">
-                Fraqtion Intelligence
-              </h2>
-              <p className="text-base sm:text-lg text-black/90 leading-relaxed mb-4">
-                Fraqtion Intelligence is a modular AI platform for discovering
-                insights and simulating strategies. Built for analysts,
-                founders, and decision-makers, it turns complex data like social
-                feeds, reviews, websites, spreadsheets, APIs, etc into dynamic
-                dashboards and AI-powered summaries. Users activate “pellets”
-                (insight modules), select a persona, and explore a shared data
-                lake to surface signals that truly matter.
-              </p>
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-black underline hover:text-white transition-colors text-sm sm:text-base font-medium"
-              >
-                Learn more about Fraqtion →
-              </a>
-            </div>
-          </div>
+          <h2 className="text-2xl sm:text-3xl font-bold text-black mb-3">
+            Fraqtion Finance
+          </h2>
+          <p className="text-base sm:text-lg text-black/90 leading-relaxed mb-4">
+            Fraqtion Finance is building a gateway between real-world assets and
+            digital participation. We enable businesses to list real-world
+            assets as tokenized opportunities on-chain, while users can
+            participate directly using crypto and manage their holdings through
+            a seamless dashboard experience. Our mission is to simplify
+            real-world asset participation on the African continent through
+            transparency, automation, and accessibility via blockchain
+            technology.
+          </p>
+          <a
+            href="https://fraqtion.finance"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black underline hover:text-white transition-colors text-sm sm:text-base font-medium"
+          >
+            Learn more about Fraqtion →
+          </a>
+        </div>
+
+        {/* Anyonecanvibe */}
+        <div className="border-2 border-black bg-[#92e363]/80 p-6 sm:p-8 rounded-md shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h2 className="text-2xl sm:text-3xl font-bold text-black mb-3">
+            Anyonecanvibe
+          </h2>
+          <p className="text-base sm:text-lg text-black/90 leading-relaxed mb-4">
+            Anyonecanvibe is a tool that can help anyone compose prompts which
+            they can then take to any code tool of choice to implement. Whether
+            you're a beginner or an experienced developer, this tool simplifies
+            the process of creating effective prompts for AI coding assistants
+            and other development tools.
+          </p>
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black underline hover:text-white transition-colors text-sm sm:text-base font-medium"
+          >
+            Learn more about Anyonecanvibe →
+          </a>
         </div>
 
         {/* Evolvables */}
