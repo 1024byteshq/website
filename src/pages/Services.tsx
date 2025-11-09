@@ -1,148 +1,162 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
+
+interface Service {
+  title: string;
+  description: string;
+  features: string[];
+  category: string;
+}
 
 const Services: React.FC = () => {
   const heroRef = useScrollAnimation();
   const processRef = useScrollAnimation();
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const serviceCategories = [
+  const allServices: Service[] = [
     {
-      title: "AI & Intelligence Systems",
+      title: "LLM & Agentic Systems",
+      category: "AI & Intelligence Systems",
       description:
-        "Transform your business with intelligent automation and data-driven insights",
-      services: [
-        {
-          title: "LLM & Agentic Systems",
-          description:
-            "Build context-aware AI agents, internal copilots, and intelligent workflows with memory, vector search, and embedded logic that adapt to your business needs.",
-          features: [
-            "Custom AI agents",
-            "Vector databases",
-            "Memory systems",
-            "Workflow automation",
-          ],
-        },
-        {
-          title: "Internal Intelligence Systems",
-          description:
-            "Custom B2B solutions that track product signals, customer behavior, and operational metrics tailored to your specific business processes.",
-          features: [
-            "Custom analytics",
-            "Operational insights",
-            "Performance tracking",
-            "Business intelligence",
-          ],
-        },
+        "Build context-aware AI agents, internal copilots, and intelligent workflows with memory, vector search, and embedded logic that adapt to your business needs.",
+      features: [
+        "Custom AI agents",
+        "Vector databases",
+        "Memory systems",
+        "Workflow automation",
       ],
     },
     {
-      title: "Development & Engineering",
-      description: "From prototype to production-ready systems that scale",
-      services: [
-        {
-          title: "Vibe Code to Stability",
-          description:
-            "Transform unstable prototypes into production-ready systems. We refactor, optimize, and prepare your codebase for enterprise-scale deployment.",
-          features: [
-            "Code refactoring",
-            "Performance optimization",
-            "Scalability planning",
-            "Production deployment",
-          ],
-        },
-        {
-          title: "Custom B2B Solutions",
-          description:
-            "Build tailored enterprise software that integrates seamlessly with existing workflows, from CRM systems to complex data pipelines.",
-          features: [
-            "Enterprise integration",
-            "Custom workflows",
-            "API development",
-            "System architecture",
-          ],
-        },
-        {
-          title: "Mobile Development",
-          description:
-            "Native and cross-platform mobile applications that deliver exceptional user experiences across iOS and Android platforms.",
-          features: [
-            "Native iOS/Android",
-            "Cross-platform apps",
-            "UI/UX design",
-            "App store deployment",
-          ],
-        },
-        {
-          title: "Web Development",
-          description:
-            "Modern web applications built with cutting-edge technologies, from responsive frontends to robust backend systems.",
-          features: [
-            "React/Next.js",
-            "Node.js backends",
-            "Database design",
-            "Cloud deployment",
-          ],
-        },
+      title: "Internal Intelligence Systems",
+      category: "AI & Intelligence Systems",
+      description:
+        "Custom B2B solutions that track product signals, customer behavior, and operational metrics tailored to your specific business processes.",
+      features: [
+        "Custom analytics",
+        "Operational insights",
+        "Performance tracking",
+        "Business intelligence",
       ],
     },
     {
-      title: "Infrastructure & Cloud",
-      description: "Scalable, secure, and reliable infrastructure solutions",
-      services: [
-        {
-          title: "Cloud Infrastructure",
-          description:
-            "Design and deploy scalable cloud architectures on AWS, Azure, or GCP with proper security, monitoring, and cost optimization.",
-          features: [
-            "Cloud architecture",
-            "Auto-scaling",
-            "Security hardening",
-            "Cost optimization",
-          ],
-        },
-        {
-          title: "DevOps & CI/CD",
-          description:
-            "Streamline your development workflow with automated testing, deployment pipelines, and infrastructure as code.",
-          features: [
-            "CI/CD pipelines",
-            "Infrastructure as code",
-            "Monitoring & logging",
-            "Automated testing",
-          ],
-        },
+      title: "Vibe Code to Stability",
+      category: "Development & Engineering",
+      description:
+        "Transform unstable prototypes into production-ready systems. We refactor, optimize, and prepare your codebase for enterprise-scale deployment.",
+      features: [
+        "Code refactoring",
+        "Performance optimization",
+        "Scalability planning",
+        "Production deployment",
       ],
     },
     {
-      title: "Specialized Solutions",
-      description: "Industry-specific expertise and consulting services",
-      services: [
-        {
-          title: "GovTech Solutions",
-          description:
-            "Secure, compliant government technology solutions that meet strict regulatory requirements and improve citizen services.",
-          features: [
-            "Security compliance",
-            "Regulatory adherence",
-            "Citizen services",
-            "Data governance",
-          ],
-        },
-        {
-          title: "Technical Consulting",
-          description:
-            "Strategic technology consulting to help you make informed decisions about architecture, technology stack, and digital transformation.",
-          features: [
-            "Technology strategy",
-            "Architecture review",
-            "Digital transformation",
-            "Team guidance",
-          ],
-        },
+      title: "Custom B2B Solutions",
+      category: "Development & Engineering",
+      description:
+        "Build tailored enterprise software that integrates seamlessly with existing workflows, from CRM systems to complex data pipelines.",
+      features: [
+        "Enterprise integration",
+        "Custom workflows",
+        "API development",
+        "System architecture",
+      ],
+    },
+    {
+      title: "Mobile Development",
+      category: "Development & Engineering",
+      description:
+        "Native and cross-platform mobile applications that deliver exceptional user experiences across iOS and Android platforms.",
+      features: [
+        "Native iOS/Android",
+        "Cross-platform apps",
+        "UI/UX design",
+        "App store deployment",
+      ],
+    },
+    {
+      title: "Web Development",
+      category: "Development & Engineering",
+      description:
+        "Modern web applications built with cutting-edge technologies, from responsive frontends to robust backend systems.",
+      features: [
+        "Modern frontend frameworks",
+        "Backend development",
+        "Database design",
+        "Cloud deployment",
+      ],
+    },
+    {
+      title: "Cloud Infrastructure",
+      category: "Infrastructure & Cloud",
+      description:
+        "Design and deploy scalable cloud architectures with proper security, monitoring, and cost optimization across major cloud platforms.",
+      features: [
+        "Cloud architecture",
+        "Auto-scaling",
+        "Security hardening",
+        "Cost optimization",
+      ],
+    },
+    {
+      title: "DevOps & CI/CD",
+      category: "Infrastructure & Cloud",
+      description:
+        "Streamline your development workflow with automated testing, deployment pipelines, and infrastructure as code.",
+      features: [
+        "CI/CD pipelines",
+        "Infrastructure as code",
+        "Monitoring & logging",
+        "Automated testing",
+      ],
+    },
+    {
+      title: "GovTech Solutions",
+      category: "Specialized Solutions",
+      description:
+        "Secure, compliant government technology solutions that meet strict regulatory requirements and improve citizen services.",
+      features: [
+        "Security compliance",
+        "Regulatory adherence",
+        "Citizen services",
+        "Data governance",
+      ],
+    },
+    {
+      title: "Technical Consulting",
+      category: "Specialized Solutions",
+      description:
+        "Strategic technology consulting to help you make informed decisions about architecture, technology stack, and digital transformation.",
+      features: [
+        "Technology strategy",
+        "Architecture review",
+        "Digital transformation",
+        "Team guidance",
       ],
     },
   ];
+
+  // Group services by category for the list
+  const servicesByCategory = allServices.reduce(
+    (acc, service) => {
+      if (!acc[service.category]) {
+        acc[service.category] = [];
+      }
+      acc[service.category].push(service);
+      return acc;
+    },
+    {} as Record<string, Service[]>
+  );
+
+  // Set first service as selected by default
+  React.useEffect(() => {
+    if (allServices.length > 0 && !selectedService) {
+      setSelectedService(allServices[0]);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="container mx-auto mt-20 px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
@@ -161,53 +175,130 @@ const Services: React.FC = () => {
         </p>
       </div>
 
-      {/* Services by Category */}
-      <div className="space-y-20">
-        {serviceCategories.map((category, categoryIndex) => (
-          <div key={categoryIndex} className="space-y-8">
-            <div className="text-center">
-              <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-black">
-                {category.title}
+      {/* Services List and Details */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+        {/* Services List - Mobile: Full width, Desktop: Left column */}
+        <div className="bg-white/10 border-4 border-black p-6 max-h-[500px] overflow-y-auto">
+          <h2 className="text-2xl font-bold mb-6 text-black">Our Services</h2>
+          <div className="space-y-6">
+            {Object.entries(servicesByCategory).map(([category, services]) => (
+              <div key={category} className="space-y-2">
+                <h3 className="text-lg font-semibold text-black/70 uppercase tracking-wide mb-3">
+                  {category}
+                </h3>
+                <div className="space-y-2">
+                  {services.map((service, index) => (
+                    <button
+                      key={index}
+                      onClick={() => {
+                        setSelectedService(service);
+                        // On mobile, open modal; on desktop, just update selection
+                        if (window.innerWidth < 1024) {
+                          setIsModalOpen(true);
+                        }
+                      }}
+                      className={`w-full text-left p-4 border-2 transition-all duration-300 ${
+                        selectedService?.title === service.title
+                          ? "border-[#a0ff6a] bg-[#a0ff6a]/20"
+                          : "border-black/30 hover:border-black/60 bg-white/5"
+                      }`}
+                    >
+                      <h4 className="font-bold text-black">
+                        {service.title}
+                      </h4>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Service Details - Desktop only */}
+        <div className="hidden lg:block bg-white/10 border-4 border-black p-8">
+          {selectedService ? (
+            <div className="fade-in-up visible">
+              <div className="mb-4">
+                <span className="text-sm font-semibold text-black/60 uppercase tracking-wide">
+                  {selectedService.category}
+                </span>
+              </div>
+              <h2 className="text-3xl font-bold mb-6 text-black">
+                {selectedService.title}
               </h2>
-              <p className="text-lg sm:text-xl text-black/70 max-w-3xl mx-auto">
-                {category.description}
+              <p className="text-lg text-black/80 mb-8 leading-relaxed">
+                {selectedService.description}
+              </p>
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-black">Key Features</h3>
+                <ul className="space-y-3">
+                  {selectedService.features.map((feature, index) => (
+                    <li
+                      key={index}
+                      className="text-base text-black/80 flex items-start"
+                    >
+                      <span className="w-2 h-2 bg-[#a0ff6a] rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ) : (
+            <div className="text-center py-12">
+              <p className="text-lg text-black/60">
+                Select a service from the list to view details
               </p>
             </div>
+          )}
+        </div>
+      </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {category.services.map((service, serviceIndex) => (
-                <div
-                  key={serviceIndex}
-                  className="bg-white/10 border-4 border-black p-6 shadow-md hover:shadow-xl transition-all duration-300 group card-hover"
-                >
-                  <h3 className="text-xl font-bold mb-3 text-black group-hover:text-[#a0ff6a] transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-black/80 mb-4 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <div className="space-y-2">
-                    <h4 className="text-sm font-semibold text-black/60 uppercase tracking-wide">
-                      Key Features
-                    </h4>
-                    <ul className="space-y-1">
-                      {service.features.map((feature, featureIndex) => (
-                        <li
-                          key={featureIndex}
-                          className="text-sm text-black/70 flex items-center"
-                        >
-                          <span className="w-1.5 h-1.5 bg-[#a0ff6a] rounded-full mr-2 flex-shrink-0"></span>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              ))}
+      {/* Mobile Modal */}
+      {isModalOpen && selectedService && (
+        <div
+          className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 lg:hidden"
+          onClick={() => setIsModalOpen(false)}
+        >
+          <div
+            className="bg-white/95 border-4 border-black p-6 max-w-lg w-full max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex justify-between items-start mb-4">
+              <span className="text-sm font-semibold text-black/60 uppercase tracking-wide">
+                {selectedService.category}
+              </span>
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="text-black hover:text-black/70 text-2xl font-bold leading-none"
+                aria-label="Close modal"
+              >
+                ×
+              </button>
+            </div>
+            <h2 className="text-2xl font-bold mb-4 text-black">
+              {selectedService.title}
+            </h2>
+            <p className="text-base text-black/80 mb-6 leading-relaxed">
+              {selectedService.description}
+            </p>
+            <div className="space-y-4">
+              <h3 className="text-lg font-bold text-black">Key Features</h3>
+              <ul className="space-y-3">
+                {selectedService.features.map((feature, index) => (
+                  <li
+                    key={index}
+                    className="text-sm text-black/80 flex items-start"
+                  >
+                    <span className="w-2 h-2 bg-[#a0ff6a] rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      )}
 
       {/* Process Section */}
       <div
