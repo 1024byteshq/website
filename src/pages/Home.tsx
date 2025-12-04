@@ -99,7 +99,7 @@ const Home: React.FC = () => {
 
       {/* Left Vein Background */}
       <div
-        className="absolute left-0 top-0 bottom-0 w-32 sm:w-48 md:w-96 lg:w-[28rem] z-0 opacity-40"
+        className="absolute left-0 top-0 bottom-0 w-32 sm:w-48 md:w-96 lg:w-[28rem] z-0 opacity-80"
         style={{
           backgroundImage: "url('/left-vein.png')",
           backgroundSize: "contain",
@@ -110,7 +110,7 @@ const Home: React.FC = () => {
 
       {/* Right Vein Background */}
       <div
-        className="absolute right-0 top-0 bottom-0 w-32 sm:w-48 md:w-96 lg:w-[28rem] z-0 opacity-40"
+        className="absolute right-0 top-0 bottom-0 w-32 sm:w-48 md:w-96 lg:w-[28rem] z-0 opacity-80"
         style={{
           backgroundImage: "url('/right-vein.png')",
           backgroundSize: "contain",
