@@ -79,12 +79,12 @@ ${formData.name}`;
       {/* Heading */}
       <div
         ref={heroRef.ref}
-        className={`text-center mt-10 mb-10 sm:mb-12 fade-in-up ${heroRef.isVisible ? "visible" : ""}`}
+        className={`text-center mt-10 mb-12 sm:mb-16 fade-in-up ${heroRef.isVisible ? "visible" : ""}`}
       >
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black border-4 border-black inline-block px-4 py-2 break-words">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black inline-block px-6 py-3 break-words">
           Get in Touch
         </h1>
-        <p className="mt-6 text-base sm:text-lg lg:text-xl text-black/80 max-w-xl mx-auto px-2">
+        <p className="mt-6 text-base sm:text-lg lg:text-xl text-black/70 max-w-xl mx-auto px-2">
           Whether you're building, investing, or exploring partnerships... drop
           us a line or request a callback.
         </p>
@@ -93,11 +93,11 @@ ${formData.name}`;
       {/* Email Card */}
       <div
         ref={emailRef.ref}
-        className={`max-w-md w-full mx-auto border-4 border-black p-6 sm:p-8 bg-white hover:shadow-xl transition-all duration-300 card-hover email-card fade-in-up ${emailRef.isVisible ? "visible" : ""}`}
+        className={`max-w-md w-full mx-auto border border-black/10 rounded-2xl p-8 sm:p-10 bg-white hover:shadow-lg transition-all duration-300 card-hover email-card fade-in-up shadow-sm ${emailRef.isVisible ? "visible" : ""}`}
       >
         <a
           href="mailto:build@1024bytes.io"
-          className="block text-center text-sm sm:text-base md:text-xl lg:text-3xl font-mono text-black hover:text-[#a0ff6a] transition-colors break-words"
+          className="block text-center text-sm sm:text-base md:text-xl lg:text-2xl font-mono text-[#aa9ff1] hover:text-[#aa9ff1]/80 transition-colors break-words"
         >
           build@1024bytes.io
         </a>
@@ -118,11 +118,11 @@ ${formData.name}`;
         </div>
 
         {isSubmitted ? (
-          <div className="bg-[#a0ff6a]/20 border-4 border-[#a0ff6a] p-8 text-center">
+          <div className="bg-[#aa9ff1]/10 border border-[#aa9ff1] rounded-2xl p-8 text-center shadow-sm">
             <h3 className="text-xl font-bold text-black mb-2">
               Email Client Opened!
             </h3>
-            <p className="text-black/80">
+            <p className="text-black/70">
               Your email client should have opened with a pre-filled message.
               Please send the email to complete your consultation request.
             </p>
@@ -144,7 +144,7 @@ ${formData.name}`;
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border-4 border-black bg-white text-black placeholder-black/50 focus:outline-none focus:border-[#a0ff6a] transition-colors"
+                  className="w-full px-5 py-3 border border-black/20 rounded-xl bg-white text-black placeholder-black/40 focus:outline-none focus:border-[#aa9ff1] focus:ring-2 focus:ring-[#aa9ff1]/20 transition-all duration-300"
                   placeholder="Your full name"
                 />
               </div>
@@ -163,7 +163,7 @@ ${formData.name}`;
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border-4 border-black bg-white text-black placeholder-black/50 focus:outline-none focus:border-[#a0ff6a] transition-colors"
+                  className="w-full px-5 py-3 border border-black/20 rounded-xl bg-white text-black placeholder-black/40 focus:outline-none focus:border-[#aa9ff1] focus:ring-2 focus:ring-[#aa9ff1]/20 transition-all duration-300"
                   placeholder="your@email.com"
                 />
               </div>
@@ -182,7 +182,7 @@ ${formData.name}`;
                 value={formData.reason}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 border-4 border-black bg-white text-black focus:outline-none focus:border-[#a0ff6a] transition-colors"
+                className="w-full px-5 py-3 border border-black/20 rounded-xl bg-white text-black focus:outline-none focus:border-[#aa9ff1] focus:ring-2 focus:ring-[#aa9ff1]/20 transition-all duration-300"
               >
                 <option value="">Select a reason</option>
                 <option value="partnership">Partnership</option>
@@ -204,7 +204,7 @@ ${formData.name}`;
                 value={formData.description}
                 onChange={handleInputChange}
                 rows={4}
-                className="w-full px-4 py-3 border-4 border-black bg-white text-black placeholder-black/50 focus:outline-none focus:border-[#a0ff6a] transition-colors resize-none"
+                className="w-full px-5 py-3 border border-black/20 rounded-xl bg-white text-black placeholder-black/40 focus:outline-none focus:border-[#aa9ff1] focus:ring-2 focus:ring-[#aa9ff1]/20 transition-all duration-300 resize-none"
                 placeholder="Tell us about your project or inquiry..."
               />
             </div>
@@ -212,7 +212,7 @@ ${formData.name}`;
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-[#a0ff6a] text-black font-bold py-3 px-8 border-4 border-black hover:bg-black hover:text-white hover:border-[#a0ff6a] transition-all duration-300"
+                className="bg-[#aa9ff1] text-white font-semibold py-4 px-10 rounded-full hover:bg-[#aa9ff1]/90 transition-all duration-300 shadow-sm hover:shadow-md"
               >
                 Open Email Your Client To Send
               </button>

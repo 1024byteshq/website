@@ -39,7 +39,7 @@ const Layout = ({ children }: LayoutProps) => {
               <div className="hidden md:flex items-center space-x-8">
                 <Link
                   to="/about"
-                  className="nav-link text-white hover:text-[#a0ff6a]/80"
+                  className="nav-link text-white hover:text-[#aa9ff1]/80"
                 >
                   About
                 </Link>
@@ -48,19 +48,19 @@ const Layout = ({ children }: LayoutProps) => {
                 </Link> */}
                 <Link
                   to="/products"
-                  className="nav-link text-white hover:text-[#a0ff6a]/80"
+                  className="nav-link text-white hover:text-[#aa9ff1]/80"
                 >
                   Products
                 </Link>
                 <Link
                   to="/services"
-                  className="nav-link text-white hover:text-[#a0ff6a]/80"
+                  className="nav-link text-white hover:text-[#aa9ff1]/80"
                 >
                   Services
                 </Link>
                 {/* <Link
                   to="/node"
-                  className="nav-link text-white hover:text-[#a0ff6a]/80"
+                  className="nav-link text-white hover:text-[#aa9ff1]/80"
                 >
                   Node
                 </Link> */}
@@ -72,7 +72,7 @@ const Layout = ({ children }: LayoutProps) => {
                 </Link> */}
                 <Link
                   to="/contact"
-                  className="nav-link text-white hover:text-[#a0ff6a]/80"
+                  className="nav-link text-white hover:text-[#aa9ff1]/80"
                 >
                   Contact
                 </Link>
@@ -107,7 +107,7 @@ const Layout = ({ children }: LayoutProps) => {
               <div className="py-4 space-y-4">
                 <Link
                   to="/about"
-                  className="block nav-link text-white hover:text-[#a0ff6a]/80"
+                  className="block nav-link text-white hover:text-[#aa9ff1]/80"
                 >
                   About
                 </Link>
@@ -116,13 +116,13 @@ const Layout = ({ children }: LayoutProps) => {
                 </Link> */}
                 <Link
                   to="/products"
-                  className="block nav-link text-white hover:text-[#a0ff6a]/80"
+                  className="block nav-link text-white hover:text-[#aa9ff1]/80"
                 >
                   Products
                 </Link>
                 <Link
                   to="/services"
-                  className="block nav-link text-white hover:text-[#a0ff6a]/80"
+                  className="block nav-link text-white hover:text-[#aa9ff1]/80"
                 >
                   Services
                 </Link>
@@ -131,13 +131,13 @@ const Layout = ({ children }: LayoutProps) => {
                 </Link> */}
                 {/* <Link
                   to="/node"
-                  className="block nav-link text-white hover:text-[#a0ff6a]/80"
+                  className="block nav-link text-white hover:text-[#aa9ff1]/80"
                 >
                   Node
                 </Link> */}
                 <Link
                   to="/contact"
-                  className="block nav-link text-white hover:text-[#a0ff6a]/80"
+                  className="block nav-link text-white hover:text-[#aa9ff1]/80"
                 >
                   Contact
                 </Link>

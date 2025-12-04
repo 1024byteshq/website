@@ -97,6 +97,28 @@ const Home: React.FC = () => {
     <div className="h-screen flex flex-col items-center justify-center px-4 relative overflow-hidden">
       <NetworkBackground />
 
+      {/* Left Vein Background */}
+      <div
+        className="absolute left-0 top-0 bottom-0 w-32 sm:w-48 md:w-96 lg:w-[28rem] z-0 opacity-40"
+        style={{
+          backgroundImage: "url('/left-vein.png')",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "left center",
+        }}
+      />
+
+      {/* Right Vein Background */}
+      <div
+        className="absolute right-0 top-0 bottom-0 w-32 sm:w-48 md:w-96 lg:w-[28rem] z-0 opacity-40"
+        style={{
+          backgroundImage: "url('/right-vein.png')",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "right center",
+        }}
+      />
+
       {/* Mobile Navigation */}
       <nav className="md:hidden absolute bottom-8 left-8 flex flex-col items-start gap-6 z-10">
         <Link to="/" className="nav-link text-2xl text-black">

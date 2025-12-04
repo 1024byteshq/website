@@ -10,12 +10,12 @@ const About: React.FC = () => {
       className={`container mx-auto relative group cursor-pointer mt-20 md:mt-40 fade-in-up ${aboutRef.isVisible ? "visible" : ""}`}
     >
       {/* Red background div that translates down on hover */}
-      <div className=" hidden md:block border-4 border-black h-fit absolute  w-fit transition-transform duration-500 ease-out group-hover:-translate-y-10">
-        <h1 className=" text-4xl p-4 sm:text-5xl font-bold text-black mb-8 bg-black/45 w-full">
+      <div className=" hidden md:block border-2 border-black/20 rounded-2xl h-fit absolute w-fit transition-transform duration-500 ease-out group-hover:-translate-y-10 shadow-lg">
+        <h1 className=" text-4xl p-4 sm:text-5xl font-bold text-black mb-8 bg-black/45 w-full rounded-t-2xl">
           <p className="opacity-0">Why We Exist?</p>
         </h1>
 
-        <div className="opacity-0 mx-auto max-w-6xl space-y-6 text-lg leading-relaxed">
+        <div className="opacity-0 mx-auto max-w-6xl space-y-6 text-lg leading-relaxed p-6">
           <p className="text-black/80">
             <b className="text-xl">1024 - pronounced "Ten-Twenty-Four" </b>{" "}
             Bytes is dedicated to creating a more intentional and integrated
@@ -40,12 +40,12 @@ const About: React.FC = () => {
       </div>
 
       {/* Main content div that stays in place */}
-      <div className=" md:mt-10  border-4 border-black h-fit relative z-10 bg-white  transition-transform duration-500 ease-out md:group-hover:translate-y-10 md:group-hover:translate-x-10 w-full">
-        <h1 className=" text-2xl  text-center md:text-left  md:text-4xl p-4 sm:text-5xl font-bold text-black mb-8 bg-[#a0ff6a]/80 w-full">
+      <div className="md:mt-10 border-2 border-black/10 rounded-2xl h-fit relative z-10 bg-white shadow-lg transition-transform duration-500 ease-out md:group-hover:translate-y-10 md:group-hover:translate-x-10 w-full">
+        <h1 className="text-2xl text-center md:text-left md:text-4xl p-6 sm:p-8 sm:text-5xl font-bold text-black mb-8 bg-[#aa9ff1]/10 rounded-t-2xl w-full">
           Why We Exist?
         </h1>
 
-        <div className="mx-auto max-w-6xl space-y-6 text-lg leading-relaxed px-4 md:px-0 text-center md:text-left pb-8">
+        <div className="mx-auto max-w-6xl space-y-8 text-lg leading-relaxed px-6 md:px-8 text-center md:text-left pb-10">
           <p className="text-black/80">
             <b className="text-xl">1024 - pronounced "Ten-Twenty-Four" </b>{" "}
             Bytes is dedicated to creating a more intentional and integrated

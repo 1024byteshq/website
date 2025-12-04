@@ -163,12 +163,12 @@ const Services: React.FC = () => {
       {/* Hero Section */}
       <div
         ref={heroRef.ref}
-        className={`text-center mb-16 fade-in-up ${heroRef.isVisible ? "visible" : ""}`}
+        className={`text-center mb-20 fade-in-up ${heroRef.isVisible ? "visible" : ""}`}
       >
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-black">
           Engineering Systems & Solutions That Scale
         </h1>
-        <p className="text-lg sm:text-xl lg:text-2xl text-black/80 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-lg sm:text-xl lg:text-2xl text-black/70 max-w-4xl mx-auto leading-relaxed">
           From AI-powered intelligence systems to enterprise-grade
           infrastructure, we help businesses transform their technology stack
           and accelerate growth.
@@ -178,12 +178,12 @@ const Services: React.FC = () => {
       {/* Services List and Details */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
         {/* Services List - Mobile: Full width, Desktop: Left column */}
-        <div className="bg-white/10 border-4 border-black p-6 max-h-[500px] overflow-y-auto">
+        <div className="bg-white border border-black/10 rounded-2xl p-6 max-h-[500px] overflow-y-auto shadow-sm">
           <h2 className="text-2xl font-bold mb-6 text-black">Our Services</h2>
-          <div className="space-y-6">
+          <div className="space-y-4">
             {Object.entries(servicesByCategory).map(([category, services]) => (
               <div key={category} className="space-y-2">
-                <h3 className="text-lg font-semibold text-black/70 uppercase tracking-wide mb-3">
+                <h3 className="text-sm font-semibold text-black/60 uppercase tracking-wide mb-3">
                   {category}
                 </h3>
                 <div className="space-y-2">
@@ -197,13 +197,13 @@ const Services: React.FC = () => {
                           setIsModalOpen(true);
                         }
                       }}
-                      className={`w-full text-left p-4 border-2 transition-all duration-300 ${
+                      className={`w-full text-left p-4 rounded-xl border transition-all duration-300 ${
                         selectedService?.title === service.title
-                          ? "border-[#a0ff6a] bg-[#a0ff6a]/20"
-                          : "border-black/30 hover:border-black/60 bg-white/5"
+                          ? "border-[#aa9ff1] bg-[#aa9ff1]/10 shadow-sm"
+                          : "border-black/10 hover:border-[#aa9ff1]/50 bg-white hover:shadow-sm"
                       }`}
                     >
-                      <h4 className="font-bold text-black">
+                      <h4 className="font-semibold text-black">
                         {service.title}
                       </h4>
                     </button>
@@ -215,7 +215,7 @@ const Services: React.FC = () => {
         </div>
 
         {/* Service Details - Desktop only */}
-        <div className="hidden lg:block bg-white/10 border-4 border-black p-8">
+        <div className="hidden lg:block bg-white border border-black/10 rounded-2xl p-8 shadow-sm">
           {selectedService ? (
             <div className="fade-in-up visible">
               <div className="mb-4">
@@ -237,7 +237,7 @@ const Services: React.FC = () => {
                       key={index}
                       className="text-base text-black/80 flex items-start"
                     >
-                      <span className="w-2 h-2 bg-[#a0ff6a] rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-[#aa9ff1] rounded-full mr-3 mt-2 flex-shrink-0"></span>
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -261,7 +261,7 @@ const Services: React.FC = () => {
           onClick={() => setIsModalOpen(false)}
         >
           <div
-            className="bg-white/95 border-4 border-black p-6 max-w-lg w-full max-h-[90vh] overflow-y-auto"
+            className="bg-white border border-black/10 rounded-2xl p-6 max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex justify-between items-start mb-4">
@@ -290,7 +290,7 @@ const Services: React.FC = () => {
                     key={index}
                     className="text-sm text-black/80 flex items-start"
                   >
-                    <span className="w-2 h-2 bg-[#a0ff6a] rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-[#aa9ff1] rounded-full mr-3 mt-2 flex-shrink-0"></span>
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -303,38 +303,38 @@ const Services: React.FC = () => {
       {/* Process Section */}
       <div
         ref={processRef.ref}
-        className={`mt-20 bg-white/10 border-4 border-black p-8 sm:p-12 fade-in-up ${processRef.isVisible ? "visible" : ""}`}
+        className={`mt-20 bg-white border border-black/10 rounded-2xl p-8 sm:p-12 fade-in-up shadow-sm ${processRef.isVisible ? "visible" : ""}`}
       >
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-black">
           How We Work
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center">
-            <div className="w-16 h-16 bg-[#a0ff6a] rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl font-bold text-black">1</span>
+            <div className="w-16 h-16 bg-[#aa9ff1] rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+              <span className="text-2xl font-bold text-white">1</span>
             </div>
             <h3 className="text-xl font-bold mb-3 text-black">Discovery</h3>
-            <p className="text-black/80">
+            <p className="text-black/70">
               We analyze your current systems, understand your goals, and
               identify opportunities for improvement.
             </p>
           </div>
           <div className="text-center">
-            <div className="w-16 h-16 bg-[#a0ff6a] rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl font-bold text-black">2</span>
+            <div className="w-16 h-16 bg-[#aa9ff1] rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+              <span className="text-2xl font-bold text-white">2</span>
             </div>
             <h3 className="text-xl font-bold mb-3 text-black">Strategy</h3>
-            <p className="text-black/80">
+            <p className="text-black/70">
               We design a comprehensive solution architecture and create a
               detailed implementation roadmap.
             </p>
           </div>
           <div className="text-center">
-            <div className="w-16 h-16 bg-[#a0ff6a] rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl font-bold text-black">3</span>
+            <div className="w-16 h-16 bg-[#aa9ff1] rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+              <span className="text-2xl font-bold text-white">3</span>
             </div>
             <h3 className="text-xl font-bold mb-3 text-black">Execution</h3>
-            <p className="text-black/80">
+            <p className="text-black/70">
               We build, test, and deploy your solution with ongoing support and
               optimization.
             </p>
@@ -343,24 +343,24 @@ const Services: React.FC = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="text-center mt-16">
+      <div className="text-center mt-20">
         <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-black">
           Ready to Transform Your Technology?
         </h2>
-        <p className="text-lg sm:text-xl text-black/80 mb-8 max-w-2xl mx-auto">
+        <p className="text-lg sm:text-xl text-black/70 mb-10 max-w-2xl mx-auto">
           Let's discuss how we can help you build the right solution for your
           business needs.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             to="/contact"
-            className="inline-block bg-[#a0ff6a] text-black font-bold py-3 px-8 rounded-full hover:text-black text-lg"
+            className="inline-block bg-[#aa9ff1] text-white font-semibold py-4 px-10 rounded-full hover:bg-[#aa9ff1]/90 transition-all duration-300 text-lg shadow-sm hover:shadow-md"
           >
             Start a Project
           </Link>
           <Link
             to="/products"
-            className="inline-block border-2 border-black text-black font-bold py-3 px-8 rounded-full hover:bg-black hover:text-white transition-colors text-lg"
+            className="inline-block border-2 border-black/20 text-black font-semibold py-4 px-10 rounded-full hover:bg-black/5 hover:border-black/40 transition-all duration-300 text-lg"
           >
             View Our Products
           </Link>

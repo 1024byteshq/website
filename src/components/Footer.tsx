@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
               href="#/policy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black/80 hover:text-[#9E6BC7] hover:underline  text-sm sm:text-base transition-colors"
+              className="text-black/70 hover:text-[#aa9ff1] hover:underline text-sm sm:text-base transition-colors"
             >
               Policy
             </a>
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
               href="https://www.linkedin.com/company/1024bytes"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black/80 hover:text-[#9E6BC7] hover:underline text-sm sm:text-base transition-colors"
+              className="text-black/70 hover:text-[#aa9ff1] hover:underline text-sm sm:text-base transition-colors"
             >
               LinkedIn
             </a>
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
               href="https://x.com/1024bytesHQ"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black/80 hover:text-[#9E6BC7] hover:underline text-sm sm:text-base transition-colors"
+              className="text-black/70 hover:text-[#aa9ff1] hover:underline text-sm sm:text-base transition-colors"
             >
               X
             </a>

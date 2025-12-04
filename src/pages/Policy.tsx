@@ -2,9 +2,9 @@ import React from "react";
 
 const PrivacyPolicy: React.FC = () => {
   return (
-    <div className="container mx-auto px-4 mt-20 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-3xl font-bold text-black mb-8">Privacy Policy</h1>
-      <div className="text-black/90 space-y-6 max-w-3xl">
+    <div className="container mx-auto px-4 mt-20 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+      <h1 className="text-3xl sm:text-4xl font-bold text-black mb-12 text-center">Privacy Policy</h1>
+      <div className="text-black/90 space-y-8 max-w-4xl mx-auto bg-white border border-black/10 rounded-2xl p-8 sm:p-12 shadow-sm">
         <p className="text-black/80">
           1024 Bytes ("we", "our", or "us") is committed to protecting your
           privacy. This policy outlines how we collect, use, and protect your
@@ -136,7 +136,7 @@ const PrivacyPolicy: React.FC = () => {
           at{" "}
           <a
             href="mailto:build@1024bytes.io"
-            className="underline text-black/80"
+            className="underline text-[#aa9ff1] hover:text-[#aa9ff1]/80 transition-colors"
           >
             build@1024bytes.io
           </a>

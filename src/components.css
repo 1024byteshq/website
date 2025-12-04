@@ -567,7 +567,7 @@
     background: linear-gradient(
       90deg,
       transparent,
-      rgba(160, 255, 106, 0.1),
+      rgba(170, 159, 241, 0.1),
       transparent
     );
     transition: left 0.5s ease;
@@ -606,7 +606,7 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, #a0ff6a, #00fffc, #fc00ff, #fffc00);
+    background: linear-gradient(45deg, #aa9ff1, #00fffc, #fc00ff, #fffc00);
     border-radius: inherit;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -620,7 +620,7 @@
   /* Subtle typing effect for key text */
   .typing-effect {
     overflow: hidden;
-    border-right: 2px solid #a0ff6a;
+    border-right: 2px solid #aa9ff1;
     white-space: nowrap;
     animation:
       typing 2s steps(40, end),
@@ -642,7 +642,7 @@
       border-color: transparent;
     }
     50% {
-      border-color: #a0ff6a;
+      border-color: #aa9ff1;
     }
   }
 }
